@@ -1,52 +1,1298 @@
-
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "catalogue": "PIP Grocery Prices",
   "currency": "ZAR",
   "country": "ZA",
+  "region": "Cape Town / South Africa planning baseline",
   "retailers": [
     "Checkers",
     "Pick n Pay",
     "Shoprite"
   ],
-  "pricing_method": "Estimated ordinary non-promotional retail prices per complete pack",
-  "last_price_review": null,
+  "last_price_review": "2026-10-15",
+  "pricing_method": "Planning estimates of ordinary non-promotional cost for one complete purchasable retail pack; not live shelf quotes",
+  "price_interpretation": {
+    "price_min": "Lower estimated ordinary pack price in ZAR",
+    "price_max": "Upper estimated ordinary pack price in ZAR",
+    "confidence": {
+      "estimated": "Planning judgement informed by category benchmarks; not individually retailer verified",
+      "reference_supported": "Range informed by retrieved product price references, may include special or non-target retailer observations"
+    },
+    "shopping_rule": "Multiply both endpoints by the integer number of complete packs to buy after accounting for available pantry stock. Do not use the midpoint.",
+    "variant_rule": "Select the actual product ID/pack (regular, lean, extra-lean, ostrich, lamb, pork mince are distinct); never silently substitute products."
+  },
+  "sources": [
+    {
+      "name": "Extension 7 baseline August 2026",
+      "url": "https://www.extension7.com/reports/the-cost-of-everyday-groceries-in-south-africa"
+    },
+    {
+      "name": "Extension 7 September pricing movements",
+      "url": "https://www.extension7.com/reports/grocery-price-movements-mid-september-2026"
+    },
+    {
+      "name": "Pick n Pay couscous listing",
+      "url": "https://www.pnp.co.za/c/couscous-and-polenta2069162883"
+    },
+    {
+      "name": "Ostrich Co-op 500g mince",
+      "url": "https://www.ostrichco-op.co.za/product-page/ostrich-lean-mince"
+    },
+    {
+      "name": "Bay Meat Market ostrich mince",
+      "url": "https://baymeatmarket.co.za/product-category/specialty-meats/ostrich/"
+    },
+    {
+      "name": "SA packaged grocery comparisons",
+      "url": "https://pricesinsouthafrica.co.za/supermarket-price-comparison-shoprite-vs-checkers-vs-pick-n-pay-vs-woolworths-grocery-basket-cost-comparisons/"
+    }
+  ],
   "products": [
     {
-      "id": "beef-mince-regular-500g",
+      "id": "regular-beef-mince-500g",
       "name": "Regular beef mince",
-      "category": "Meat",
-      "pack_size_g": 500,
-      "price_min": null,
-      "price_max": null,
-      "confidence": "unpriced"
+      "category": "meat",
+      "pack": {
+        "quantity": 500,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 52,
+      "price_max": 72,
+      "confidence": "estimated",
+      "aliases": []
     },
     {
-      "id": "beef-mince-lean-500g",
+      "id": "lean-beef-mince-500g",
       "name": "Lean beef mince",
-      "category": "Meat",
-      "pack_size_g": 500,
-      "price_min": null,
-      "price_max": null,
-      "confidence": "unpriced"
+      "category": "meat",
+      "pack": {
+        "quantity": 500,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 65,
+      "price_max": 85,
+      "confidence": "estimated",
+      "aliases": []
     },
     {
-      "id": "beef-mince-extra-lean-500g",
+      "id": "extra-lean-beef-mince-500g",
       "name": "Extra-lean beef mince",
-      "category": "Meat",
-      "pack_size_g": 500,
-      "price_min": null,
-      "price_max": null,
-      "confidence": "unpriced"
+      "category": "meat",
+      "pack": {
+        "quantity": 500,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 75,
+      "price_max": 100,
+      "confidence": "estimated",
+      "aliases": []
     },
     {
       "id": "ostrich-mince-500g",
       "name": "Ostrich mince",
-      "category": "Meat",
-      "pack_size_g": 500,
-      "price_min": null,
-      "price_max": null,
-      "confidence": "unpriced"
+      "category": "meat",
+      "pack": {
+        "quantity": 500,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 65,
+      "price_max": 100,
+      "confidence": "reference_supported",
+      "aliases": []
+    },
+    {
+      "id": "lamb-mince-500g",
+      "name": "Lamb mince",
+      "category": "meat",
+      "pack": {
+        "quantity": 500,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 90,
+      "price_max": 125,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "pork-mince-500g",
+      "name": "Pork mince",
+      "category": "meat",
+      "pack": {
+        "quantity": 500,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 45,
+      "price_max": 75,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "chicken-breast-fillets-1000g",
+      "name": "Chicken breast fillets",
+      "category": "meat",
+      "pack": {
+        "quantity": 1000,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 90,
+      "price_max": 140,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "chicken-thighs-bone-in-1000g",
+      "name": "Chicken thighs bone-in",
+      "category": "meat",
+      "pack": {
+        "quantity": 1000,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 60,
+      "price_max": 95,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "chicken-thighs-boneless-1000g",
+      "name": "Chicken thighs boneless",
+      "category": "meat",
+      "pack": {
+        "quantity": 1000,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 95,
+      "price_max": 145,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "chicken-drumsticks-1000g",
+      "name": "Chicken drumsticks",
+      "category": "meat",
+      "pack": {
+        "quantity": 1000,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 50,
+      "price_max": 80,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "chicken-schnitzels-prepared-500g",
+      "name": "Chicken schnitzels prepared",
+      "category": "meat",
+      "pack": {
+        "quantity": 500,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 65,
+      "price_max": 100,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "beef-strips-500g",
+      "name": "Beef strips",
+      "category": "meat",
+      "pack": {
+        "quantity": 500,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 85,
+      "price_max": 135,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "whole-chicken-1500g",
+      "name": "Whole chicken",
+      "category": "meat",
+      "pack": {
+        "quantity": 1500,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 90,
+      "price_max": 140,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "frozen-hake-fillets-500g",
+      "name": "Frozen hake fillets",
+      "category": "seafood",
+      "pack": {
+        "quantity": 500,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 60,
+      "price_max": 105,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "tuna-in-brine-170g",
+      "name": "Tuna in brine",
+      "category": "seafood",
+      "pack": {
+        "quantity": 170,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 19,
+      "price_max": 32,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "large-eggs-6each",
+      "name": "Large eggs",
+      "category": "dairy",
+      "pack": {
+        "quantity": 6,
+        "unit": "each",
+        "count": 1
+      },
+      "price_min": 20,
+      "price_max": 32,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "large-eggs-18each",
+      "name": "Large eggs",
+      "category": "dairy",
+      "pack": {
+        "quantity": 18,
+        "unit": "each",
+        "count": 1
+      },
+      "price_min": 50,
+      "price_max": 75,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "milk-full-cream-1000ml",
+      "name": "Milk full cream",
+      "category": "dairy",
+      "pack": {
+        "quantity": 1000,
+        "unit": "ml",
+        "count": 1
+      },
+      "price_min": 16,
+      "price_max": 23,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "plain-yoghurt-500g",
+      "name": "Plain yoghurt",
+      "category": "dairy",
+      "pack": {
+        "quantity": 500,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 25,
+      "price_max": 45,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "plain-double-cream-yoghurt-1000g",
+      "name": "Plain double cream yoghurt",
+      "category": "dairy",
+      "pack": {
+        "quantity": 1000,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 40,
+      "price_max": 65,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "sour-cream-250ml",
+      "name": "Sour cream",
+      "category": "dairy",
+      "pack": {
+        "quantity": 250,
+        "unit": "ml",
+        "count": 1
+      },
+      "price_min": 26,
+      "price_max": 42,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "cooking-cream-250ml",
+      "name": "Cooking cream",
+      "category": "dairy",
+      "pack": {
+        "quantity": 250,
+        "unit": "ml",
+        "count": 1
+      },
+      "price_min": 24,
+      "price_max": 43,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "cheddar-cheese-400g",
+      "name": "Cheddar cheese",
+      "category": "dairy",
+      "pack": {
+        "quantity": 400,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 55,
+      "price_max": 85,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "mozzarella-cheese-200g",
+      "name": "Mozzarella cheese",
+      "category": "dairy",
+      "pack": {
+        "quantity": 200,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 32,
+      "price_max": 55,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "butter-500g",
+      "name": "Butter",
+      "category": "dairy",
+      "pack": {
+        "quantity": 500,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 80,
+      "price_max": 115,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "potatoes-2000g",
+      "name": "Potatoes",
+      "category": "produce",
+      "pack": {
+        "quantity": 2000,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 30,
+      "price_max": 55,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "baby-potatoes-1000g",
+      "name": "Baby potatoes",
+      "category": "produce",
+      "pack": {
+        "quantity": 1000,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 25,
+      "price_max": 45,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "sweet-potatoes-1000g",
+      "name": "Sweet potatoes",
+      "category": "produce",
+      "pack": {
+        "quantity": 1000,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 25,
+      "price_max": 45,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "onions-1000g",
+      "name": "Onions",
+      "category": "produce",
+      "pack": {
+        "quantity": 1000,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 20,
+      "price_max": 38,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "tomatoes-1000g",
+      "name": "Tomatoes",
+      "category": "produce",
+      "pack": {
+        "quantity": 1000,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 22,
+      "price_max": 45,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "roma-tomatoes-1000g",
+      "name": "Roma tomatoes",
+      "category": "produce",
+      "pack": {
+        "quantity": 1000,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 23,
+      "price_max": 48,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "garlic-bulb-1each",
+      "name": "Garlic bulb",
+      "category": "produce",
+      "pack": {
+        "quantity": 1,
+        "unit": "each",
+        "count": 1
+      },
+      "price_min": 8,
+      "price_max": 18,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "fresh-ginger-100g",
+      "name": "Fresh ginger",
+      "category": "produce",
+      "pack": {
+        "quantity": 100,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 9,
+      "price_max": 20,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "carrots-1000g",
+      "name": "Carrots",
+      "category": "produce",
+      "pack": {
+        "quantity": 1000,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 17,
+      "price_max": 30,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "whole-butternut-1each",
+      "name": "Whole butternut",
+      "category": "produce",
+      "pack": {
+        "quantity": 1,
+        "unit": "each",
+        "count": 1
+      },
+      "price_min": 18,
+      "price_max": 38,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "baby-spinach-200g",
+      "name": "Baby spinach",
+      "category": "produce",
+      "pack": {
+        "quantity": 200,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 22,
+      "price_max": 40,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "green-beans-fresh-300g",
+      "name": "Green beans fresh",
+      "category": "produce",
+      "pack": {
+        "quantity": 300,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 25,
+      "price_max": 43,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "broccoli-1each",
+      "name": "Broccoli",
+      "category": "produce",
+      "pack": {
+        "quantity": 1,
+        "unit": "each",
+        "count": 1
+      },
+      "price_min": 20,
+      "price_max": 37,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "red-peppers-2each",
+      "name": "Red peppers",
+      "category": "produce",
+      "pack": {
+        "quantity": 2,
+        "unit": "each",
+        "count": 1
+      },
+      "price_min": 20,
+      "price_max": 39,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "green-peppers-2each",
+      "name": "Green peppers",
+      "category": "produce",
+      "pack": {
+        "quantity": 2,
+        "unit": "each",
+        "count": 1
+      },
+      "price_min": 17,
+      "price_max": 32,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "mushrooms-250g",
+      "name": "Mushrooms",
+      "category": "produce",
+      "pack": {
+        "quantity": 250,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 24,
+      "price_max": 40,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "lemons-4each",
+      "name": "Lemons",
+      "category": "produce",
+      "pack": {
+        "quantity": 4,
+        "unit": "each",
+        "count": 1
+      },
+      "price_min": 18,
+      "price_max": 35,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "fresh-coriander-1bunch",
+      "name": "Fresh coriander",
+      "category": "produce",
+      "pack": {
+        "quantity": 1,
+        "unit": "bunch",
+        "count": 1
+      },
+      "price_min": 12,
+      "price_max": 24,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "fresh-parsley-1bunch",
+      "name": "Fresh parsley",
+      "category": "produce",
+      "pack": {
+        "quantity": 1,
+        "unit": "bunch",
+        "count": 1
+      },
+      "price_min": 12,
+      "price_max": 24,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "cabbage-1each",
+      "name": "Cabbage",
+      "category": "produce",
+      "pack": {
+        "quantity": 1,
+        "unit": "each",
+        "count": 1
+      },
+      "price_min": 18,
+      "price_max": 35,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "lettuce-1each",
+      "name": "Lettuce",
+      "category": "produce",
+      "pack": {
+        "quantity": 1,
+        "unit": "each",
+        "count": 1
+      },
+      "price_min": 17,
+      "price_max": 33,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "cucumber-1each",
+      "name": "Cucumber",
+      "category": "produce",
+      "pack": {
+        "quantity": 1,
+        "unit": "each",
+        "count": 1
+      },
+      "price_min": 12,
+      "price_max": 23,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "avocado-2each",
+      "name": "Avocado",
+      "category": "produce",
+      "pack": {
+        "quantity": 2,
+        "unit": "each",
+        "count": 1
+      },
+      "price_min": 26,
+      "price_max": 50,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "basmati-rice-1000g",
+      "name": "Basmati rice",
+      "category": "grains",
+      "pack": {
+        "quantity": 1000,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 58,
+      "price_max": 85,
+      "confidence": "reference_supported",
+      "aliases": []
+    },
+    {
+      "id": "long-grain-white-rice-1000g",
+      "name": "Long grain white rice",
+      "category": "grains",
+      "pack": {
+        "quantity": 1000,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 20,
+      "price_max": 35,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "couscous-500g",
+      "name": "Couscous",
+      "category": "grains",
+      "pack": {
+        "quantity": 500,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 45,
+      "price_max": 60,
+      "confidence": "reference_supported",
+      "aliases": []
+    },
+    {
+      "id": "fusilli-pasta-500g",
+      "name": "Fusilli pasta",
+      "category": "grains",
+      "pack": {
+        "quantity": 500,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 16,
+      "price_max": 32,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "spaghetti-500g",
+      "name": "Spaghetti",
+      "category": "grains",
+      "pack": {
+        "quantity": 500,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 16,
+      "price_max": 32,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "wraps-6each",
+      "name": "Wraps",
+      "category": "grains",
+      "pack": {
+        "quantity": 6,
+        "unit": "each",
+        "count": 1
+      },
+      "price_min": 25,
+      "price_max": 45,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "breadcrumbs-400g",
+      "name": "Breadcrumbs",
+      "category": "grains",
+      "pack": {
+        "quantity": 400,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 20,
+      "price_max": 37,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "flour-cake-wheat-1000g",
+      "name": "Flour cake wheat",
+      "category": "grains",
+      "pack": {
+        "quantity": 1000,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 17,
+      "price_max": 30,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "bread-loaf-brown-700g",
+      "name": "Bread loaf brown",
+      "category": "grains",
+      "pack": {
+        "quantity": 700,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 15,
+      "price_max": 25,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "red-lentils-dried-500g",
+      "name": "Red lentils dried",
+      "category": "pulses",
+      "pack": {
+        "quantity": 500,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 24,
+      "price_max": 40,
+      "confidence": "reference_supported",
+      "aliases": []
+    },
+    {
+      "id": "brown-lentils-dried-500g",
+      "name": "Brown lentils dried",
+      "category": "pulses",
+      "pack": {
+        "quantity": 500,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 22,
+      "price_max": 38,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "chickpeas-canned-400g",
+      "name": "Chickpeas canned",
+      "category": "pulses",
+      "pack": {
+        "quantity": 400,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 18,
+      "price_max": 30,
+      "confidence": "reference_supported",
+      "aliases": []
+    },
+    {
+      "id": "kidney-beans-canned-400g",
+      "name": "Kidney beans canned",
+      "category": "pulses",
+      "pack": {
+        "quantity": 400,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 18,
+      "price_max": 30,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "butter-beans-canned-400g",
+      "name": "Butter beans canned",
+      "category": "pulses",
+      "pack": {
+        "quantity": 400,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 18,
+      "price_max": 32,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "chickpeas-dried-500g",
+      "name": "Chickpeas dried",
+      "category": "pulses",
+      "pack": {
+        "quantity": 500,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 32,
+      "price_max": 52,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "chopped-tomatoes-canned-400g",
+      "name": "Chopped tomatoes canned",
+      "category": "pantry",
+      "pack": {
+        "quantity": 400,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 15,
+      "price_max": 26,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "tomato-paste-100g",
+      "name": "Tomato paste",
+      "category": "pantry",
+      "pack": {
+        "quantity": 100,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 12,
+      "price_max": 22,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "coconut-milk-400ml",
+      "name": "Coconut milk",
+      "category": "pantry",
+      "pack": {
+        "quantity": 400,
+        "unit": "ml",
+        "count": 1
+      },
+      "price_min": 24,
+      "price_max": 45,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "coconut-cream-400ml",
+      "name": "Coconut cream",
+      "category": "pantry",
+      "pack": {
+        "quantity": 400,
+        "unit": "ml",
+        "count": 1
+      },
+      "price_min": 26,
+      "price_max": 48,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "vegetable-stock-cubes-12each",
+      "name": "Vegetable stock cubes",
+      "category": "pantry",
+      "pack": {
+        "quantity": 12,
+        "unit": "each",
+        "count": 1
+      },
+      "price_min": 13,
+      "price_max": 28,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "chicken-stock-cubes-12each",
+      "name": "Chicken stock cubes",
+      "category": "pantry",
+      "pack": {
+        "quantity": 12,
+        "unit": "each",
+        "count": 1
+      },
+      "price_min": 13,
+      "price_max": 28,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "beef-stock-cubes-12each",
+      "name": "Beef stock cubes",
+      "category": "pantry",
+      "pack": {
+        "quantity": 12,
+        "unit": "each",
+        "count": 1
+      },
+      "price_min": 13,
+      "price_max": 28,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "apricot-jam-450g",
+      "name": "Apricot jam",
+      "category": "pantry",
+      "pack": {
+        "quantity": 450,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 28,
+      "price_max": 52,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "mild-curry-powder-100g",
+      "name": "Mild curry powder",
+      "category": "spices",
+      "pack": {
+        "quantity": 100,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 18,
+      "price_max": 35,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "turmeric-ground-100g",
+      "name": "Turmeric ground",
+      "category": "spices",
+      "pack": {
+        "quantity": 100,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 16,
+      "price_max": 32,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "ground-cumin-100g",
+      "name": "Ground cumin",
+      "category": "spices",
+      "pack": {
+        "quantity": 100,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 18,
+      "price_max": 37,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "ground-coriander-100g",
+      "name": "Ground coriander",
+      "category": "spices",
+      "pack": {
+        "quantity": 100,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 16,
+      "price_max": 34,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "paprika-100g",
+      "name": "Paprika",
+      "category": "spices",
+      "pack": {
+        "quantity": 100,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 20,
+      "price_max": 39,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "cinnamon-ground-100g",
+      "name": "Cinnamon ground",
+      "category": "spices",
+      "pack": {
+        "quantity": 100,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 18,
+      "price_max": 40,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "dried-mixed-herbs-20g",
+      "name": "Dried mixed herbs",
+      "category": "spices",
+      "pack": {
+        "quantity": 20,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 13,
+      "price_max": 26,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "garlic-powder-100g",
+      "name": "Garlic powder",
+      "category": "spices",
+      "pack": {
+        "quantity": 100,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 20,
+      "price_max": 42,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "bay-leaves-10g",
+      "name": "Bay leaves",
+      "category": "spices",
+      "pack": {
+        "quantity": 10,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 14,
+      "price_max": 30,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "salt-500g",
+      "name": "Salt",
+      "category": "spices",
+      "pack": {
+        "quantity": 500,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 10,
+      "price_max": 20,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "black-pepper-ground-50g",
+      "name": "Black pepper ground",
+      "category": "spices",
+      "pack": {
+        "quantity": 50,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 20,
+      "price_max": 42,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "mustard-prepared-250g",
+      "name": "Mustard prepared",
+      "category": "pantry",
+      "pack": {
+        "quantity": 250,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 18,
+      "price_max": 35,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "olive-oil-extra-virgin-500ml",
+      "name": "Olive oil extra virgin",
+      "category": "pantry",
+      "pack": {
+        "quantity": 500,
+        "unit": "ml",
+        "count": 1
+      },
+      "price_min": 85,
+      "price_max": 145,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "canola-oil-750ml",
+      "name": "Canola oil",
+      "category": "pantry",
+      "pack": {
+        "quantity": 750,
+        "unit": "ml",
+        "count": 1
+      },
+      "price_min": 29,
+      "price_max": 55,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "sunflower-oil-2000ml",
+      "name": "Sunflower oil",
+      "category": "pantry",
+      "pack": {
+        "quantity": 2000,
+        "unit": "ml",
+        "count": 1
+      },
+      "price_min": 55,
+      "price_max": 90,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "vinegar-white-750ml",
+      "name": "Vinegar white",
+      "category": "pantry",
+      "pack": {
+        "quantity": 750,
+        "unit": "ml",
+        "count": 1
+      },
+      "price_min": 15,
+      "price_max": 27,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "worcestershire-sauce-150ml",
+      "name": "Worcestershire sauce",
+      "category": "pantry",
+      "pack": {
+        "quantity": 150,
+        "unit": "ml",
+        "count": 1
+      },
+      "price_min": 21,
+      "price_max": 38,
+      "confidence": "estimated",
+      "aliases": []
+    },
+    {
+      "id": "raisins-250g",
+      "name": "Raisins",
+      "category": "pantry",
+      "pack": {
+        "quantity": 250,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 25,
+      "price_max": 46,
+      "confidence": "estimated",
+      "aliases": []
     }
   ]
 }
