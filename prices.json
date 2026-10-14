@@ -1,1 +1,52 @@
 
+{
+  "schema_version": "1.0",
+  "catalogue": "PIP Grocery Prices",
+  "currency": "ZAR",
+  "country": "ZA",
+  "retailers": [
+    "Checkers",
+    "Pick n Pay",
+    "Shoprite"
+  ],
+  "pricing_method": "Estimated ordinary non-promotional retail prices per complete pack",
+  "last_price_review": null,
+  "products": [
+    {
+      "id": "beef-mince-regular-500g",
+      "name": "Regular beef mince",
+      "category": "Meat",
+      "pack_size_g": 500,
+      "price_min": null,
+      "price_max": null,
+      "confidence": "unpriced"
+    },
+    {
+      "id": "beef-mince-lean-500g",
+      "name": "Lean beef mince",
+      "category": "Meat",
+      "pack_size_g": 500,
+      "price_min": null,
+      "price_max": null,
+      "confidence": "unpriced"
+    },
+    {
+      "id": "beef-mince-extra-lean-500g",
+      "name": "Extra-lean beef mince",
+      "category": "Meat",
+      "pack_size_g": 500,
+      "price_min": null,
+      "price_max": null,
+      "confidence": "unpriced"
+    },
+    {
+      "id": "ostrich-mince-500g",
+      "name": "Ostrich mince",
+      "category": "Meat",
+      "pack_size_g": 500,
+      "price_min": null,
+      "price_max": null,
+      "confidence": "unpriced"
+    }
+  ]
+}
