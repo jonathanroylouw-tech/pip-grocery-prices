@@ -460,34 +460,17 @@
       "price_max": 80,
       "confidence": "estimated",
       "aliases": [],
-      "offers": [
-        {
-          "retailer": "Shoprite",
-          "pack": {
-            "quantity": 1000,
-            "unit": "g"
-          },
-          "price_min": 69.99,
-          "price_max": 69.99,
-          "product_name": "Frango Frozen Chicken Drumsticks per kg",
-          "source_url": "https://www.pricecheck.co.za/offers/237468540/Frozen%2BChicken%2BDrumsticks%2BPer%2BKg",
-          "format": "frozen_variable_weight",
-          "observed_on": "2026-10-15",
-          "status": "PriceCheck published retailer listing. Not independently confirmed as Cape Town store checkout price",
-          "notes": "Frozen per-kg product; not a quote for fresh drumsticks"
-        }
-      ],
+      "offers": [],
       "retailer_coverage": {
         "reviewed_on": "2026-10-15",
-        "quoted_retailers": [
-          "Shoprite"
-        ],
+        "quoted_retailers": [],
         "missing_retailers": [
           "Checkers",
           "Pick n Pay",
+          "Shoprite",
           "Woolworths"
         ],
-        "quality": "partial_or_complete_published_quote_coverage"
+        "quality": "no_published_retailer_quote_yet"
       }
     },
     {
@@ -651,49 +634,17 @@
       "price_max": 32,
       "confidence": "estimated",
       "aliases": [],
-      "offers": [
-        {
-          "retailer": "Checkers",
-          "pack": {
-            "quantity": 170,
-            "unit": "g"
-          },
-          "price_min": 25.99,
-          "price_max": 25.99,
-          "product_name": "Lucky Star Shredded Tuna in Water Salt Added 170g",
-          "source_url": "https://www.pricecheck.co.za/offers/237464686/Light%2BMeat%2BShredded%2BTuna%2BIn%2BWater%2B170G",
-          "format": "similar_form_not_identical",
-          "observed_on": "2026-10-15",
-          "status": "PriceCheck published retailer listing. Not independently confirmed as Cape Town store checkout price",
-          "notes": "Light meat tuna in salted water, not specified as brine; marked alternative variant"
-        },
-        {
-          "retailer": "Shoprite",
-          "pack": {
-            "quantity": 170,
-            "unit": "g"
-          },
-          "price_min": 25.99,
-          "price_max": 25.99,
-          "product_name": "Lucky Star Shredded Tuna in Water Salt Added 170g",
-          "source_url": "https://www.pricecheck.co.za/offers/237464686/Light%2BMeat%2BShredded%2BTuna%2BIn%2BWater%2B170G",
-          "format": "similar_form_not_identical",
-          "observed_on": "2026-10-15",
-          "status": "PriceCheck published retailer listing. Not independently confirmed as Cape Town store checkout price",
-          "notes": "Light meat tuna in salted water, not specified as brine; marked alternative variant"
-        }
-      ],
+      "offers": [],
       "retailer_coverage": {
         "reviewed_on": "2026-10-15",
-        "quoted_retailers": [
-          "Checkers",
-          "Shoprite"
-        ],
+        "quoted_retailers": [],
         "missing_retailers": [
+          "Checkers",
           "Pick n Pay",
+          "Shoprite",
           "Woolworths"
         ],
-        "quality": "partial_or_complete_published_quote_coverage"
+        "quality": "no_published_retailer_quote_yet"
       }
     },
     {
@@ -1850,15 +1801,32 @@
       "aliases": [],
       "retailer_coverage": {
         "reviewed_on": "2026-10-15",
-        "quoted_retailers": [],
+        "quoted_retailers": [
+          "Shoprite"
+        ],
         "missing_retailers": [
           "Checkers",
           "Pick n Pay",
-          "Shoprite",
           "Woolworths"
         ],
-        "quality": "no_published_retailer_quote_yet"
-      }
+        "quality": "partial_or_complete_published_quote_coverage"
+      },
+      "offers": [
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 300,
+            "unit": "g"
+          },
+          "price_min": 39.99,
+          "price_max": 39.99,
+          "product_name": "Freshmark Fresh Sliced Green Beans Bag 300g",
+          "source_url": "https://www.pricecheck.co.za/offers/237522081/Sliced%2BGreen%2BBeans%2BBag%2B300G",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Independent comparison listing; actual regional shelf price unverified"
+        }
+      ]
     },
     {
       "id": "broccoli-1each",
@@ -2994,15 +2962,48 @@
       "aliases": [],
       "retailer_coverage": {
         "reviewed_on": "2026-10-15",
-        "quoted_retailers": [],
-        "missing_retailers": [
-          "Checkers",
-          "Pick n Pay",
+        "quoted_retailers": [
           "Shoprite",
+          "Checkers"
+        ],
+        "missing_retailers": [
+          "Pick n Pay",
           "Woolworths"
         ],
-        "quality": "no_published_retailer_quote_yet"
-      }
+        "quality": "partial_or_complete_published_quote_coverage"
+      },
+      "offers": [
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 400,
+            "unit": "g"
+          },
+          "price_min": 23.99,
+          "price_max": 23.99,
+          "product_name": "Pot O' Gold Red Kidney Beans in Brine 400g",
+          "source_url": "https://www.pricecheck.co.za/search?search=kidney+beans",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Independent comparison listing; actual regional shelf price unverified",
+          "notes": "Product and retailer identified in same search listing"
+        },
+        {
+          "retailer": "Checkers",
+          "pack": {
+            "quantity": 400,
+            "unit": "g"
+          },
+          "price_min": 23.99,
+          "price_max": 23.99,
+          "product_name": "Pot O' Gold Red Kidney Beans in Brine 400g",
+          "source_url": "https://www.pricecheck.co.za/search?search=kidney+beans",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Independent comparison listing; actual regional shelf price unverified",
+          "notes": "Product and retailer identified in same search listing"
+        }
+      ]
     },
     {
       "id": "butter-beans-canned-400g",
@@ -3100,15 +3101,46 @@
       "aliases": [],
       "retailer_coverage": {
         "reviewed_on": "2026-10-15",
-        "quoted_retailers": [],
-        "missing_retailers": [
-          "Checkers",
-          "Pick n Pay",
+        "quoted_retailers": [
           "Shoprite",
+          "Checkers"
+        ],
+        "missing_retailers": [
+          "Pick n Pay",
           "Woolworths"
         ],
-        "quality": "no_published_retailer_quote_yet"
-      }
+        "quality": "partial_or_complete_published_quote_coverage"
+      },
+      "offers": [
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 400,
+            "unit": "g"
+          },
+          "price_min": 24.99,
+          "price_max": 24.99,
+          "product_name": "Pot O' Gold Diced Italian Tomatoes in Juice 400g",
+          "source_url": "https://www.pricecheck.co.za/search?search=italian+tomatoes",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Independent comparison listing; actual regional shelf price unverified"
+        },
+        {
+          "retailer": "Checkers",
+          "pack": {
+            "quantity": 400,
+            "unit": "g"
+          },
+          "price_min": 24.99,
+          "price_max": 24.99,
+          "product_name": "Pot O' Gold Diced Italian Tomatoes in Juice 400g",
+          "source_url": "https://www.pricecheck.co.za/search?search=italian+tomatoes",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Independent comparison listing; actual regional shelf price unverified"
+        }
+      ]
     },
     {
       "id": "tomato-paste-100g",
@@ -4306,9 +4338,10 @@
   "retailer_audit": {
     "reviewed_on": "2026-10-15",
     "products_audited": 91,
-    "products_with_offers": 54,
-    "retailer_offer_records": 115,
+    "products_with_offers": 55,
+    "retailer_offer_records": 117,
     "scope": "All catalogue products reviewed for retailer-offer coverage. Published listing quotations added when usable. Many items remain unquoted because comparable live retailer listings were not established. Existing historical offers retained.",
-    "limitation": "PriceCheck comparisons are indicative, and some offers may represent promos, variable weights or matching alternative product forms. Branch checkout prices unverified."
+    "limitation": "PriceCheck comparisons are indicative, and some offers may represent promos, variable weights or matching alternative product forms. Branch checkout prices unverified.",
+    "correction_note": "Removed frozen drumstick offer under generic fresh/unspecified drumsticks, and salted-water tuna under brine because those are not guaranteed equivalent. Additional named quotes for beans, tomatoes and green beans added."
   }
 }
