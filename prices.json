@@ -7,7 +7,8 @@
   "retailers": [
     "Checkers",
     "Pick n Pay",
-    "Shoprite"
+    "Shoprite",
+    "Woolworths"
   ],
   "last_price_review": "2026-10-15",
   "pricing_method": "Indicative standard-pack planning ranges anchored to named online retail price observations where available; not guarantees of ordinary non-promotional in-store prices. Some products remain preliminary estimates.",
@@ -2019,8 +2020,8 @@
       "name": "Fresh coriander",
       "category": "produce",
       "pack": {
-        "quantity": 1,
-        "unit": "bunch",
+        "quantity": 25,
+        "unit": "g",
         "count": 1
       },
       "price_min": 12,
@@ -2037,15 +2038,20 @@
           "Woolworths"
         ],
         "quality": "no_published_retailer_quote_yet"
-      }
+      },
+      "pack_label": "Approx. 25g fresh herb bunch; bag/bunch actual weight varies",
+      "pack_estimate_note": "Approximate herb bunch weight only. Do not represent as exact 25g fixed-weight manufacturer pack.",
+      "recipe_keys": [
+        "fresh coriander"
+      ]
     },
     {
       "id": "fresh-parsley-1bunch",
       "name": "Fresh parsley",
       "category": "produce",
       "pack": {
-        "quantity": 1,
-        "unit": "bunch",
+        "quantity": 25,
+        "unit": "g",
         "count": 1
       },
       "price_min": 12,
@@ -2062,7 +2068,12 @@
           "Woolworths"
         ],
         "quality": "no_published_retailer_quote_yet"
-      }
+      },
+      "pack_label": "Approx. 25g fresh herb bunch; bag/bunch actual weight varies",
+      "pack_estimate_note": "Approximate herb bunch weight only. Do not represent as exact 25g fixed-weight manufacturer pack.",
+      "recipe_keys": [
+        "fresh parsley"
+      ]
     },
     {
       "id": "cabbage-1each",
@@ -3988,6 +3999,76 @@
           "format": "standard",
           "observed_on": "2026-10-15",
           "status": "Published online price; Cape Town store applicability unverified"
+        },
+        {
+          "retailer": "Woolworths",
+          "pack": {
+            "quantity": 500,
+            "unit": "ml"
+          },
+          "price_min": 109.95,
+          "price_max": 109.95,
+          "product_name": "Costa's Extra Virgin Olive Oil 500 ml",
+          "source_url": "https://www.woolworths.co.za/prod/Extra-Virgin-Olive-Oil-500ml/_/undefined/prod/_/A-6009204330849",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online listing; exact Cape Town shelf price unconfirmed"
+        },
+        {
+          "retailer": "Checkers",
+          "pack": {
+            "quantity": 250,
+            "unit": "ml"
+          },
+          "price_min": 79.99,
+          "price_max": 79.99,
+          "product_name": "Santa Bianca Extra Virgin Olive Oil 250 ml",
+          "source_url": "https://www.pricecheck.co.za/search?search=extra+virgin+olive+oil+checkers",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online listing; exact Cape Town shelf price unconfirmed"
+        },
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 250,
+            "unit": "ml"
+          },
+          "price_min": 79.99,
+          "price_max": 79.99,
+          "product_name": "Santa Bianca Extra Virgin Olive Oil 250 ml",
+          "source_url": "https://www.pricecheck.co.za/search?search=extra+virgin+olive+oil+checkers",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online listing; exact Cape Town shelf price unconfirmed"
+        },
+        {
+          "retailer": "Checkers",
+          "pack": {
+            "quantity": 1000,
+            "unit": "ml"
+          },
+          "price_min": 239.99,
+          "price_max": 239.99,
+          "product_name": "Santa Bianca Extra Virgin Olive Oil 1 L",
+          "source_url": "https://www.pricecheck.co.za/search?search=extra+virgin+olive+oil+checkers",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online listing; exact Cape Town shelf price unconfirmed"
+        },
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 1000,
+            "unit": "ml"
+          },
+          "price_min": 239.99,
+          "price_max": 239.99,
+          "product_name": "Santa Bianca Extra Virgin Olive Oil 1 L",
+          "source_url": "https://www.pricecheck.co.za/search?search=extra+virgin+olive+oil+checkers",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online listing; exact Cape Town shelf price unconfirmed"
         }
       ],
       "retailer_coverage": {
@@ -3995,13 +4076,16 @@
         "quoted_retailers": [
           "Pick n Pay",
           "Checkers",
-          "Shoprite"
-        ],
-        "missing_retailers": [
+          "Shoprite",
           "Woolworths"
         ],
+        "missing_retailers": [],
         "quality": "partial_or_complete_published_quote_coverage"
-      }
+      },
+      "recipe_keys": [
+        "olive oil",
+        "extra virgin olive oil"
+      ]
     },
     {
       "id": "canola-oil-750ml",
@@ -4053,20 +4137,106 @@
           "format": "standard",
           "observed_on": "2026-10-15",
           "status": "Published online price; Cape Town store applicability unverified"
+        },
+        {
+          "retailer": "Checkers",
+          "pack": {
+            "quantity": 2000,
+            "unit": "ml"
+          },
+          "price_min": 84.99,
+          "price_max": 84.99,
+          "product_name": "Sunfoil Canola Oil 2 L",
+          "source_url": "https://www.pricecheck.co.za/offers/237476442/Canola%2BOil%2B2L",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online listing; exact Cape Town shelf price unconfirmed"
+        },
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 2000,
+            "unit": "ml"
+          },
+          "price_min": 84.99,
+          "price_max": 84.99,
+          "product_name": "Sunfoil Canola Oil 2 L",
+          "source_url": "https://www.pricecheck.co.za/offers/237476442/Canola%2BOil%2B2L",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online listing; exact Cape Town shelf price unconfirmed"
+        },
+        {
+          "retailer": "Pick n Pay",
+          "pack": {
+            "quantity": 2000,
+            "unit": "ml"
+          },
+          "price_min": 79.99,
+          "price_max": 79.99,
+          "product_name": "B-Well Canola Oil 2 L",
+          "source_url": "https://www.pricecheck.co.za/offers/139041550/b-well-canola-oil-2l",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online listing; exact Cape Town shelf price unconfirmed"
+        },
+        {
+          "retailer": "Woolworths",
+          "pack": {
+            "quantity": 2000,
+            "unit": "ml"
+          },
+          "price_min": 89.99,
+          "price_max": 89.99,
+          "product_name": "Woolworths Canola Oil 2 L",
+          "source_url": "https://www.woolworths.co.za/prod/Food/Father-s-Day/Baskets/Content-Baskets/The-Perfect-Pantry-Basics/Canola-Oil-2L/_/A-6001009029058",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online listing; exact Cape Town shelf price unconfirmed"
+        },
+        {
+          "retailer": "Checkers",
+          "pack": {
+            "quantity": 750,
+            "unit": "ml"
+          },
+          "price_min": 39.99,
+          "price_max": 39.99,
+          "product_name": "Sunfoil Canola Oil 750 ml",
+          "source_url": "https://www.pricecheck.co.za/offers/237478227/Canola%2BOil%2B750ML",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online listing; exact Cape Town shelf price unconfirmed"
+        },
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 750,
+            "unit": "ml"
+          },
+          "price_min": 39.99,
+          "price_max": 39.99,
+          "product_name": "Sunfoil Canola Oil 750 ml",
+          "source_url": "https://www.pricecheck.co.za/offers/237478227/Canola%2BOil%2B750ML",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online listing; exact Cape Town shelf price unconfirmed"
         }
       ],
       "retailer_coverage": {
         "reviewed_on": "2026-10-15",
         "quoted_retailers": [
           "Shoprite",
-          "Checkers"
-        ],
-        "missing_retailers": [
+          "Checkers",
           "Pick n Pay",
           "Woolworths"
         ],
+        "missing_retailers": [],
         "quality": "partial_or_complete_published_quote_coverage"
-      }
+      },
+      "recipe_keys": [
+        "canola oil"
+      ]
     },
     {
       "id": "sunflower-oil-2000ml",
@@ -4118,20 +4288,37 @@
           "format": "standard",
           "observed_on": "2026-10-15",
           "status": "Published online price; Cape Town store applicability unverified"
+        },
+        {
+          "retailer": "Pick n Pay",
+          "pack": {
+            "quantity": 2000,
+            "unit": "ml"
+          },
+          "price_min": 84.99,
+          "price_max": 84.99,
+          "product_name": "Sunfoil Sunflower Oil 2 L",
+          "source_url": "https://www.pricecheck.co.za/search?search=2l+sunfoil+oil",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online listing; exact Cape Town shelf price unconfirmed"
         }
       ],
       "retailer_coverage": {
         "reviewed_on": "2026-10-15",
         "quoted_retailers": [
           "Shoprite",
-          "Checkers"
+          "Checkers",
+          "Pick n Pay"
         ],
         "missing_retailers": [
-          "Pick n Pay",
           "Woolworths"
         ],
         "quality": "partial_or_complete_published_quote_coverage"
-      }
+      },
+      "recipe_keys": [
+        "sunflower oil"
+      ]
     },
     {
       "id": "vinegar-white-750ml",
@@ -4340,6 +4527,141 @@
         ],
         "quality": "partial_or_complete_published_quote_coverage"
       }
+    },
+    {
+      "id": "avocado-oil-500ml",
+      "name": "Pure avocado oil",
+      "category": "cooking oil",
+      "pack": {
+        "quantity": 500,
+        "unit": "ml",
+        "count": 1
+      },
+      "price_min": 150,
+      "price_max": 180,
+      "confidence": "reference_supported",
+      "recipe_keys": [
+        "avocado oil"
+      ],
+      "aliases": [
+        "pure avocado oil"
+      ],
+      "price_reviewed_on": "2026-10-15",
+      "offers": [
+        {
+          "retailer": "Woolworths",
+          "pack": {
+            "quantity": 250,
+            "unit": "ml"
+          },
+          "price_min": 86.99,
+          "price_max": 86.99,
+          "product_name": "Woolworths Pure Avocado Oil 250 ml",
+          "source_url": "https://www.woolworths.co.za/prod/Food/Food-Cupboard/Oils-Vinegars/Oils/Avocado-Oil-250-ml/_/A-6009189785283?isFromPLP=true",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online listing; exact Cape Town shelf price unconfirmed"
+        },
+        {
+          "retailer": "Woolworths",
+          "pack": {
+            "quantity": 500,
+            "unit": "ml"
+          },
+          "price_min": 159.99,
+          "price_max": 159.99,
+          "product_name": "Woolworths Pure Avocado Oil 500 ml",
+          "source_url": "https://www.woolworths.co.za/prod/Food/Pantry/Oils-Vinegars/Oils/Better-Oils/Avocado-Oil-500-ml/_/A-6009189785290?isFromPLP=true",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online listing; exact Cape Town shelf price unconfirmed"
+        },
+        {
+          "retailer": "Woolworths",
+          "pack": {
+            "quantity": 1000,
+            "unit": "ml"
+          },
+          "price_min": 259.99,
+          "price_max": 259.99,
+          "product_name": "Woolworths Pure Avocado Oil 1 L",
+          "source_url": "https://www.woolworths.co.za/cat/Food/Pantry/Oils-Vinegars/Oils/Better-Oils/_/N-1z13ajsZ10bhunk",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online listing; exact Cape Town shelf price unconfirmed"
+        }
+      ],
+      "retailer_coverage": {
+        "reviewed_on": "2026-10-15",
+        "quoted_retailers": [
+          "Woolworths"
+        ],
+        "missing_retailers": [
+          "Checkers",
+          "Pick n Pay",
+          "Shoprite"
+        ],
+        "quality": "partial_or_complete_published_quote_coverage"
+      }
+    },
+    {
+      "id": "flaxseed-oil-250ml",
+      "name": "Cold-pressed flaxseed oil",
+      "category": "cold-use oil",
+      "pack": {
+        "quantity": 250,
+        "unit": "ml",
+        "count": 1
+      },
+      "price_min": 74.99,
+      "price_max": 94.99,
+      "confidence": "reference_supported",
+      "recipe_keys": [
+        "flaxseed oil"
+      ],
+      "aliases": [
+        "flax oil",
+        "cold pressed flaxseed oil"
+      ],
+      "price_reviewed_on": "2026-10-15",
+      "preparation_warning": "For cold dressings and finishing only; do not fry or roast with flaxseed oil.",
+      "price_evidence": [
+        {
+          "retailer": "Faithful to Nature",
+          "product_name": "Credé Flax Oil 250ml",
+          "source_url": "https://www.faithful-to-nature.co.za/health/vitamins-supplements/crede-flax-oil",
+          "observed_on": "2026-10-15",
+          "price_zar": 74.99
+        }
+      ],
+      "offers": [
+        {
+          "retailer": "Checkers",
+          "pack": {
+            "quantity": 250,
+            "unit": "ml"
+          },
+          "price_min": 74.99,
+          "price_max": 74.99,
+          "product_name": "Lemcke Flaxseed Oil 250 ml",
+          "source_url": "https://www.pricecheck.co.za/offers/85585206/Flaxseed%2BOil%2B-%2B250ML",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online listing; exact Cape Town shelf price unconfirmed"
+        }
+      ],
+      "retailer_coverage": {
+        "reviewed_on": "2026-10-15",
+        "quoted_retailers": [
+          "Checkers"
+        ],
+        "missing_retailers": [
+          "Pick n Pay",
+          "Shoprite",
+          "Woolworths"
+        ],
+        "quality": "partial_or_complete_published_quote_coverage"
+      }
     }
   ],
   "audit": {
@@ -4353,11 +4675,12 @@
   "retailer_offers_status": "Full catalogue coverage audit (15 October 2026). Where retailer offers exist they are named-product online listing observations, with source URLs and correct pack sizes. A missing retailer means NO quoted price, NOT zero price. Do not extrapolate one supermarket's price to another.",
   "retailer_audit": {
     "reviewed_on": "2026-10-15",
-    "products_audited": 91,
-    "products_with_offers": 55,
-    "retailer_offer_records": 118,
+    "products_audited": 93,
+    "products_with_offers": 57,
+    "retailer_offer_records": 134,
     "scope": "All catalogue products reviewed for retailer-offer coverage. Published listing quotations added when usable. Many items remain unquoted because comparable live retailer listings were not established. Existing historical offers retained.",
     "limitation": "PriceCheck comparisons are indicative, and some offers may represent promos, variable weights or matching alternative product forms. Branch checkout prices unverified.",
-    "correction_note": "Removed frozen drumstick offer under generic fresh/unspecified drumsticks, and salted-water tuna under brine because those are not guaranteed equivalent. Additional named quotes for beans, tomatoes and green beans added. 15 Oct: Removed all 1kg and variable-weight price-per-kg mince offers from 500g product identities. Comparisons are strictly 500g packaged offers."
+    "correction_note": "Removed frozen drumstick offer under generic fresh/unspecified drumsticks, and salted-water tuna under brine because those are not guaranteed equivalent. Additional named quotes for beans, tomatoes and green beans added. 15 Oct: Removed all 1kg and variable-weight price-per-kg mince offers from 500g product identities. Comparisons are strictly 500g packaged offers.",
+    "oil_research": "Added avocado and flaxseed, 250/500/750/1000/2000ml oil offers, direct Woolworths product-page prices and independently attributed retailer quotes, plus approximate 25g fresh herb units"
   }
 }
