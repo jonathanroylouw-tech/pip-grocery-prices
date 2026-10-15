@@ -2734,15 +2734,33 @@
       "aliases": [],
       "retailer_coverage": {
         "reviewed_on": "2026-10-15",
-        "quoted_retailers": [],
+        "quoted_retailers": [
+          "Shoprite"
+        ],
         "missing_retailers": [
           "Checkers",
           "Pick n Pay",
-          "Shoprite",
           "Woolworths"
         ],
-        "quality": "no_published_retailer_quote_yet"
-      }
+        "quality": "partial_or_complete_published_quote_coverage"
+      },
+      "offers": [
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 200,
+            "unit": "g"
+          },
+          "price_min": 12.99,
+          "price_max": 12.99,
+          "product_name": "The Bakery Bread Crumbs 200g",
+          "source_url": "https://www.pricecheck.co.za/search?search=bread+crumbs",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online price listing; branch price not verified",
+          "notes": "This is a smaller 200g pack; a shopping requirement of 400g would require two packs; not a price quote for a 400g package"
+        }
+      ]
     },
     {
       "id": "flour-cake-wheat-1000g",
@@ -3669,15 +3687,32 @@
       "aliases": [],
       "retailer_coverage": {
         "reviewed_on": "2026-10-15",
-        "quoted_retailers": [],
+        "quoted_retailers": [
+          "Pick n Pay"
+        ],
         "missing_retailers": [
           "Checkers",
-          "Pick n Pay",
           "Shoprite",
           "Woolworths"
         ],
-        "quality": "no_published_retailer_quote_yet"
-      }
+        "quality": "partial_or_complete_published_quote_coverage"
+      },
+      "offers": [
+        {
+          "retailer": "Pick n Pay",
+          "pack": {
+            "quantity": 100,
+            "unit": "g"
+          },
+          "price_min": 34.99,
+          "price_max": 34.99,
+          "product_name": "Nature's Choice Turmeric Powder 100g",
+          "source_url": "https://www.pricecheck.co.za/offers/201485752/Tumeric%2B100G",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online price listing; branch price not verified"
+        }
+      ]
     },
     {
       "id": "ground-cumin-100g",
@@ -4866,8 +4901,8 @@
   "retailer_audit": {
     "reviewed_on": "2026-10-15",
     "products_audited": 93,
-    "products_with_offers": 62,
-    "retailer_offer_records": 146,
+    "products_with_offers": 64,
+    "retailer_offer_records": 148,
     "scope": "All catalogue products reviewed for retailer-offer coverage. Published listing quotations added when usable. Many items remain unquoted because comparable live retailer listings were not established. Existing historical offers retained.",
     "limitation": "PriceCheck comparisons are indicative, and some offers may represent promos, variable weights or matching alternative product forms. Branch checkout prices unverified.",
     "correction_note": "Removed frozen drumstick offer under generic fresh/unspecified drumsticks, and salted-water tuna under brine because those are not guaranteed equivalent. Additional named quotes for beans, tomatoes and green beans added. 15 Oct: Removed all 1kg and variable-weight price-per-kg mince offers from 500g product identities. Comparisons are strictly 500g packaged offers.",
