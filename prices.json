@@ -975,15 +975,74 @@
       "aliases": [],
       "retailer_coverage": {
         "reviewed_on": "2026-10-15",
-        "quoted_retailers": [],
-        "missing_retailers": [
-          "Checkers",
-          "Pick n Pay",
+        "quoted_retailers": [
           "Shoprite",
+          "Checkers",
+          "Pick n Pay"
+        ],
+        "missing_retailers": [
           "Woolworths"
         ],
-        "quality": "no_published_retailer_quote_yet"
-      }
+        "quality": "partial_or_complete_published_quote_coverage"
+      },
+      "offers": [
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 250,
+            "unit": "ml"
+          },
+          "price_min": 35.99,
+          "price_max": 35.99,
+          "product_name": "Clover Medium Fat Sour Cream 250ml",
+          "source_url": "https://www.pricecheck.co.za/offers/219753048/Clover%2BMedium%2BFat%2BSour%2BCream%2B250ML",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online retailer comparison listing; local branch price not verified"
+        },
+        {
+          "retailer": "Checkers",
+          "pack": {
+            "quantity": 250,
+            "unit": "ml"
+          },
+          "price_min": 36.99,
+          "price_max": 36.99,
+          "product_name": "Clover Medium Fat Sour Cream 250ml",
+          "source_url": "https://www.pricecheck.co.za/offers/219753048/Clover%2BMedium%2BFat%2BSour%2BCream%2B250ML",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online retailer comparison listing; local branch price not verified"
+        },
+        {
+          "retailer": "Pick n Pay",
+          "pack": {
+            "quantity": 250,
+            "unit": "ml"
+          },
+          "price_min": 36.99,
+          "price_max": 36.99,
+          "product_name": "Clover Medium Fat Sour Cream 250ml",
+          "source_url": "https://www.pricecheck.co.za/offers/219753048/Clover%2BMedium%2BFat%2BSour%2BCream%2B250ML",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online retailer comparison listing; local branch price not verified"
+        },
+        {
+          "retailer": "Pick n Pay",
+          "pack": {
+            "quantity": 250,
+            "unit": "ml"
+          },
+          "price_min": 26.99,
+          "price_max": 26.99,
+          "product_name": "PnP Sour Cream 250ml",
+          "source_url": "https://www.pricecheck.co.za/offers/187540465/Pnp%2BSour%2BCream%2B250ML",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online retailer comparison listing; local branch price not verified"
+        }
+      ]
     },
     {
       "id": "cooking-cream-250ml",
@@ -3635,15 +3694,63 @@
       "aliases": [],
       "retailer_coverage": {
         "reviewed_on": "2026-10-15",
-        "quoted_retailers": [],
-        "missing_retailers": [
-          "Checkers",
+        "quoted_retailers": [
           "Pick n Pay",
-          "Shoprite",
+          "Checkers",
+          "Shoprite"
+        ],
+        "missing_retailers": [
           "Woolworths"
         ],
-        "quality": "no_published_retailer_quote_yet"
-      }
+        "quality": "partial_or_complete_published_quote_coverage"
+      },
+      "offers": [
+        {
+          "retailer": "Pick n Pay",
+          "pack": {
+            "quantity": 41,
+            "unit": "g"
+          },
+          "price_min": 29.99,
+          "price_max": 29.99,
+          "product_name": "PnP Ground Cumin Bottle 41g",
+          "source_url": "https://www.pricecheck.co.za/search?search=ground+cumin",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online retailer comparison listing; local branch price not verified",
+          "notes": "Alternative 41g bottle; not the 100g default pack"
+        },
+        {
+          "retailer": "Checkers",
+          "pack": {
+            "quantity": 39,
+            "unit": "g"
+          },
+          "price_min": 44.99,
+          "price_max": 44.99,
+          "product_name": "Robertsons Ground Cumin 39g",
+          "source_url": "https://www.pricecheck.co.za/search?search=ground+cumin",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online retailer comparison listing; local branch price not verified",
+          "notes": "Alternative 39g bottle; not the 100g default pack"
+        },
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 39,
+            "unit": "g"
+          },
+          "price_min": 44.99,
+          "price_max": 44.99,
+          "product_name": "Robertsons Ground Cumin 39g",
+          "source_url": "https://www.pricecheck.co.za/search?search=ground+cumin",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online retailer comparison listing; local branch price not verified",
+          "notes": "Alternative 39g bottle; not the 100g default pack"
+        }
+      ]
     },
     {
       "id": "ground-coriander-100g",
@@ -3660,15 +3767,33 @@
       "aliases": [],
       "retailer_coverage": {
         "reviewed_on": "2026-10-15",
-        "quoted_retailers": [],
+        "quoted_retailers": [
+          "Shoprite"
+        ],
         "missing_retailers": [
           "Checkers",
           "Pick n Pay",
-          "Shoprite",
           "Woolworths"
         ],
-        "quality": "no_published_retailer_quote_yet"
-      }
+        "quality": "partial_or_complete_published_quote_coverage"
+      },
+      "offers": [
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 40,
+            "unit": "g"
+          },
+          "price_min": 24.99,
+          "price_max": 24.99,
+          "product_name": "Spice Season Ground Coriander 40g",
+          "source_url": "https://www.pricecheck.co.za/search?search=Spice+Season+Ground+Coriander+40g",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online retailer comparison listing; local branch price not verified",
+          "notes": "Alternative 40g pack; not the 100g default pack"
+        }
+      ]
     },
     {
       "id": "paprika-100g",
@@ -3727,15 +3852,62 @@
       "aliases": [],
       "retailer_coverage": {
         "reviewed_on": "2026-10-15",
-        "quoted_retailers": [],
-        "missing_retailers": [
-          "Checkers",
+        "quoted_retailers": [
           "Pick n Pay",
-          "Shoprite",
+          "Checkers",
+          "Shoprite"
+        ],
+        "missing_retailers": [
           "Woolworths"
         ],
-        "quality": "no_published_retailer_quote_yet"
-      }
+        "quality": "partial_or_complete_published_quote_coverage"
+      },
+      "offers": [
+        {
+          "retailer": "Pick n Pay",
+          "pack": {
+            "quantity": 100,
+            "unit": "g"
+          },
+          "price_min": 39.99,
+          "price_max": 39.99,
+          "product_name": "Nature's Choice Cinnamon Powder 100g",
+          "source_url": "https://www.pricecheck.co.za/offers/201485751/Cinnamon%2B100G",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online retailer comparison listing; local branch price not verified"
+        },
+        {
+          "retailer": "Checkers",
+          "pack": {
+            "quantity": 42,
+            "unit": "g"
+          },
+          "price_min": 29.99,
+          "price_max": 29.99,
+          "product_name": "Robertsons Ground Cinnamon 42g",
+          "source_url": "https://www.pricecheck.co.za/search?search=Robertsons+Ground+Cinnamon+42g",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online retailer comparison listing; local branch price not verified",
+          "notes": "Alternative 42g; not the 100g default pack"
+        },
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 42,
+            "unit": "g"
+          },
+          "price_min": 29.99,
+          "price_max": 29.99,
+          "product_name": "Robertsons Ground Cinnamon 42g",
+          "source_url": "https://www.pricecheck.co.za/search?search=Robertsons+Ground+Cinnamon+42g",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online retailer comparison listing; local branch price not verified",
+          "notes": "Alternative 42g; not the 100g default pack"
+        }
+      ]
     },
     {
       "id": "dried-mixed-herbs-20g",
@@ -3777,15 +3949,33 @@
       "aliases": [],
       "retailer_coverage": {
         "reviewed_on": "2026-10-15",
-        "quoted_retailers": [],
+        "quoted_retailers": [
+          "Shoprite"
+        ],
         "missing_retailers": [
           "Checkers",
           "Pick n Pay",
-          "Shoprite",
           "Woolworths"
         ],
-        "quality": "no_published_retailer_quote_yet"
-      }
+        "quality": "partial_or_complete_published_quote_coverage"
+      },
+      "offers": [
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 60,
+            "unit": "g"
+          },
+          "price_min": 29.99,
+          "price_max": 29.99,
+          "product_name": "Walker Bay Spice Garlic Powder 60g",
+          "source_url": "https://www.pricecheck.co.za/search?search=Walker+Bay+Spice+Garlic+Powder+60g",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Public online retailer comparison listing; local branch price not verified",
+          "notes": "Alternative 60g; not the 100g default pack"
+        }
+      ]
     },
     {
       "id": "bay-leaves-10g",
@@ -4676,11 +4866,12 @@
   "retailer_audit": {
     "reviewed_on": "2026-10-15",
     "products_audited": 93,
-    "products_with_offers": 57,
-    "retailer_offer_records": 134,
+    "products_with_offers": 62,
+    "retailer_offer_records": 146,
     "scope": "All catalogue products reviewed for retailer-offer coverage. Published listing quotations added when usable. Many items remain unquoted because comparable live retailer listings were not established. Existing historical offers retained.",
     "limitation": "PriceCheck comparisons are indicative, and some offers may represent promos, variable weights or matching alternative product forms. Branch checkout prices unverified.",
     "correction_note": "Removed frozen drumstick offer under generic fresh/unspecified drumsticks, and salted-water tuna under brine because those are not guaranteed equivalent. Additional named quotes for beans, tomatoes and green beans added. 15 Oct: Removed all 1kg and variable-weight price-per-kg mince offers from 500g product identities. Comparisons are strictly 500g packaged offers.",
-    "oil_research": "Added avocado and flaxseed, 250/500/750/1000/2000ml oil offers, direct Woolworths product-page prices and independently attributed retailer quotes, plus approximate 25g fresh herb units"
+    "oil_research": "Added avocado and flaxseed, 250/500/750/1000/2000ml oil offers, direct Woolworths product-page prices and independently attributed retailer quotes, plus approximate 25g fresh herb units",
+    "precision_note": "Spices in 39g, 40g, 41g, 42g and 60g alternative bottles are recorded with ACTUAL pack size; they must not be displayed as the price of a 100g pack. Mince remains strictly 500g."
   }
 }
