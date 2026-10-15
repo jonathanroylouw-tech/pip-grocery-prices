@@ -216,7 +216,22 @@
         ],
         "quality": "no_published_retailer_quote_yet"
       },
-      "offers": []
+      "offers": [
+        {
+          "retailer": "Woolworths",
+          "pack": {
+            "quantity": 500,
+            "unit": "g"
+          },
+          "price_min": 79.99,
+          "price_max": 79.99,
+          "product_name": "Woolworths Extra Lean Ostrich Mince 500 g",
+          "source_url": "https://www.woolworths.co.za/browse/food-south-africa/meat-poultry-fish/venison-duck-ostrich",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Official online category listing; branch price unverified"
+        }
+      ]
     },
     {
       "id": "lamb-mince-500g",
