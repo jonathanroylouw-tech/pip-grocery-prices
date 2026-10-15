@@ -70,49 +70,17 @@
         "promotion_status": "Not verified as non-promotional",
         "retailer_location": "Not independently verified for Cape Town branch"
       },
-      "offers": [
-        {
-          "retailer": "Checkers",
-          "pack": {
-            "quantity": 1000,
-            "unit": "g"
-          },
-          "price_min": 129.99,
-          "price_max": 129.99,
-          "product_name": "Butchery regular beef mince (variable weight; 1 kg price)",
-          "source_url": "https://www.pricecheck.co.za/offers/237462571/Beef%2BMince%2BPer%2BKg",
-          "format": "variable_weight_price_per_kg",
-          "observed_on": "2026-10-15",
-          "status": "PriceCheck published retailer listing. Not independently confirmed as Cape Town store checkout price",
-          "notes": "Price is per 1kg of variable-weight mince; not a factory 500g pack"
-        },
-        {
-          "retailer": "Shoprite",
-          "pack": {
-            "quantity": 1000,
-            "unit": "g"
-          },
-          "price_min": 129.99,
-          "price_max": 129.99,
-          "product_name": "Butchery regular beef mince (variable weight; 1 kg price)",
-          "source_url": "https://www.pricecheck.co.za/offers/237462571/Beef%2BMince%2BPer%2BKg",
-          "format": "variable_weight_price_per_kg",
-          "observed_on": "2026-10-15",
-          "status": "PriceCheck published retailer listing. Not independently confirmed as Cape Town store checkout price",
-          "notes": "Price is per 1kg of variable-weight mince; not a factory 500g pack"
-        }
-      ],
+      "offers": [],
       "retailer_coverage": {
         "reviewed_on": "2026-10-15",
-        "quoted_retailers": [
-          "Checkers",
-          "Shoprite"
-        ],
+        "quoted_retailers": [],
         "missing_retailers": [
+          "Checkers",
           "Pick n Pay",
+          "Shoprite",
           "Woolworths"
         ],
-        "quality": "partial_or_complete_published_quote_coverage"
+        "quality": "no_published_retailer_quote_yet"
       }
     },
     {
@@ -208,31 +176,17 @@
           "format": "standard",
           "observed_on": "2026-10-15",
           "status": "PriceCheck published retailer listing. Not independently confirmed as Cape Town store checkout price"
-        },
-        {
-          "retailer": "Woolworths",
-          "pack": {
-            "quantity": 1000,
-            "unit": "g"
-          },
-          "price_min": 159.99,
-          "price_max": 159.99,
-          "product_name": "Woolworths Extra Lean Beef Mince 1kg",
-          "source_url": "https://www.pricecheck.co.za/offers/203279881/Extra%2BLean%2BBeef%2BMince%2B1%2BKg",
-          "format": "standard",
-          "observed_on": "2026-10-15",
-          "status": "PriceCheck published retailer listing. Not independently confirmed as Cape Town store checkout price"
         }
       ],
       "retailer_coverage": {
         "reviewed_on": "2026-10-15",
         "quoted_retailers": [
-          "Pick n Pay",
-          "Woolworths"
+          "Pick n Pay"
         ],
         "missing_retailers": [
           "Checkers",
-          "Shoprite"
+          "Shoprite",
+          "Woolworths"
         ],
         "quality": "partial_or_complete_published_quote_coverage"
       }
@@ -260,7 +214,8 @@
           "Woolworths"
         ],
         "quality": "no_published_retailer_quote_yet"
-      }
+      },
+      "offers": []
     },
     {
       "id": "lamb-mince-500g",
@@ -285,7 +240,8 @@
           "Woolworths"
         ],
         "quality": "no_published_retailer_quote_yet"
-      }
+      },
+      "offers": []
     },
     {
       "id": "pork-mince-500g",
@@ -310,7 +266,8 @@
           "Woolworths"
         ],
         "quality": "no_published_retailer_quote_yet"
-      }
+      },
+      "offers": []
     },
     {
       "id": "chicken-breast-fillets-1000g",
@@ -4397,10 +4354,10 @@
   "retailer_audit": {
     "reviewed_on": "2026-10-15",
     "products_audited": 91,
-    "products_with_offers": 56,
-    "retailer_offer_records": 121,
+    "products_with_offers": 55,
+    "retailer_offer_records": 118,
     "scope": "All catalogue products reviewed for retailer-offer coverage. Published listing quotations added when usable. Many items remain unquoted because comparable live retailer listings were not established. Existing historical offers retained.",
     "limitation": "PriceCheck comparisons are indicative, and some offers may represent promos, variable weights or matching alternative product forms. Branch checkout prices unverified.",
-    "correction_note": "Removed frozen drumstick offer under generic fresh/unspecified drumsticks, and salted-water tuna under brine because those are not guaranteed equivalent. Additional named quotes for beans, tomatoes and green beans added."
+    "correction_note": "Removed frozen drumstick offer under generic fresh/unspecified drumsticks, and salted-water tuna under brine because those are not guaranteed equivalent. Additional named quotes for beans, tomatoes and green beans added. 15 Oct: Removed all 1kg and variable-weight price-per-kg mince offers from 500g product identities. Comparisons are strictly 500g packaged offers."
   }
 }
