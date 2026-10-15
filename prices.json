@@ -370,6 +370,20 @@
           "format": "standard",
           "observed_on": "2026-10-15",
           "status": "Published online price; Cape Town store applicability unverified"
+        },
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 6,
+            "unit": "each"
+          },
+          "price_min": 19.99,
+          "price_max": 19.99,
+          "product_name": "Farmyard Eggs 6 Pack",
+          "source_url": "https://www.pricecheck.co.za/offers/242816351/Alzu%2BExtra%2BLarge%2BEggs%2B6%2BPack",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Price on independent retail comparison page, checked 15 Oct 2026; branch availability not verified"
         }
       ]
     },
