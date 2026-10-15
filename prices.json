@@ -93,7 +93,23 @@
         "notes": "R139.99/kg ≈R70/500g for loose mince, PnP 500g R89.99; differences reflect both pack formats and retailers.",
         "promotion_status": "Not verified as non-promotional",
         "retailer_location": "Not independently verified for Cape Town branch"
-      }
+      },
+      "offers": [
+        {
+          "retailer": "Pick n Pay",
+          "pack": {
+            "quantity": 500,
+            "unit": "g"
+          },
+          "price_min": 89.99,
+          "price_max": 89.99,
+          "product_name": "PnP Lean Beef Mince 500g",
+          "source_url": "https://www.pricecheck.co.za/offers/249606650/Pnp%2BLean%2BBeef%2BMince%2B500G",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        }
+      ]
     },
     {
       "id": "extra-lean-beef-mince-500g",
@@ -173,7 +189,23 @@
         "notes": "Checkers 1kg R79.99 (Oct 12); Checkers/Shoprite Farmer's Choice six-piece fillets R84.99–94.99/kg. Excludes free-range premium. Variable weight retail packs.",
         "promotion_status": "Not verified as non-promotional",
         "retailer_location": "Not independently verified for Cape Town branch"
-      }
+      },
+      "offers": [
+        {
+          "retailer": "Checkers",
+          "pack": {
+            "quantity": 1000,
+            "unit": "g"
+          },
+          "price_min": 79.99,
+          "price_max": 79.99,
+          "product_name": "Chicken breast fillets 1kg",
+          "source_url": "https://www.shapshop.online/checkers-vs-pick-n-pay",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        }
+      ]
     },
     {
       "id": "chicken-thighs-bone-in-1000g",
@@ -309,7 +341,37 @@
         "notes": "PnP Large six pack R22.99 (Oct 12), Checkers Nulaid XL six pack R27.99. Brands/egg grades differ; excludes suspected outlier R11.99.",
         "promotion_status": "Not verified as non-promotional",
         "retailer_location": "Not independently verified for Cape Town branch"
-      }
+      },
+      "offers": [
+        {
+          "retailer": "Pick n Pay",
+          "pack": {
+            "quantity": 6,
+            "unit": "each"
+          },
+          "price_min": 22.99,
+          "price_max": 22.99,
+          "product_name": "PnP Large eggs 6-pack",
+          "source_url": "https://www.shapshop.online/checkers-vs-pick-n-pay",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        },
+        {
+          "retailer": "Checkers",
+          "pack": {
+            "quantity": 6,
+            "unit": "each"
+          },
+          "price_min": 27.99,
+          "price_max": 27.99,
+          "product_name": "Nulaid Extra Large Eggs 6-pack",
+          "source_url": "https://www.pricecheck.co.za/offers/237521813/Nulaid%2BExtra%2BLarge%2BEggs%2B6%2BPack",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        }
+      ]
     },
     {
       "id": "large-eggs-18each",
@@ -346,7 +408,37 @@
         "notes": "Shoprite R16.89, Checkers R17.99. UHT milk, not chilled fresh milk.",
         "promotion_status": "Not verified as non-promotional",
         "retailer_location": "Not independently verified for Cape Town branch"
-      }
+      },
+      "offers": [
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 1000,
+            "unit": "ml"
+          },
+          "price_min": 16.89,
+          "price_max": 16.89,
+          "product_name": "Crystal Valley UHT full cream milk 1L",
+          "source_url": "https://www.pricecheck.co.za/offers/237462399/Crystal%2BValley%2BFull%2BCream%2BLong%2BLife%2BMilk%2B1L",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        },
+        {
+          "retailer": "Checkers",
+          "pack": {
+            "quantity": 1000,
+            "unit": "ml"
+          },
+          "price_min": 17.99,
+          "price_max": 17.99,
+          "product_name": "Crystal Valley UHT full cream milk 1L",
+          "source_url": "https://www.pricecheck.co.za/offers/237462399/Crystal%2BValley%2BFull%2BCream%2BLong%2BLife%2BMilk%2B1L",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        }
+      ]
     },
     {
       "id": "plain-yoghurt-500g",
@@ -425,7 +517,37 @@
         "notes": "Shoprite R89.99, Checkers R99.99, true cheddar (not cheese spread or processed slices).",
         "promotion_status": "Not verified as non-promotional",
         "retailer_location": "Not independently verified for Cape Town branch"
-      }
+      },
+      "offers": [
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 400,
+            "unit": "g"
+          },
+          "price_min": 89.99,
+          "price_max": 89.99,
+          "product_name": "Ladismith Full Fat Cheddar 400g",
+          "source_url": "https://www.pricecheck.co.za/offers/237469255/Full%2BFat%2BCheddar%2BCheese%2B400G",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        },
+        {
+          "retailer": "Checkers",
+          "pack": {
+            "quantity": 400,
+            "unit": "g"
+          },
+          "price_min": 99.99,
+          "price_max": 99.99,
+          "product_name": "Ladismith Full Fat Cheddar 400g",
+          "source_url": "https://www.pricecheck.co.za/offers/237469255/Full%2BFat%2BCheddar%2BCheese%2B400G",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        }
+      ]
     },
     {
       "id": "mozzarella-cheese-200g",
@@ -462,7 +584,37 @@
         "notes": "Shoprite R89.99; Checkers R99.99. True butter, not blended spread.",
         "promotion_status": "Not verified as non-promotional",
         "retailer_location": "Not independently verified for Cape Town branch"
-      }
+      },
+      "offers": [
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 500,
+            "unit": "g"
+          },
+          "price_min": 89.99,
+          "price_max": 89.99,
+          "product_name": "Clover Mooi River butter brick 500g",
+          "source_url": "https://www.pricecheck.co.za/offers/201937205/Clover%2BMooi%2BRivier%2BSalted%2BButter%2BBrick%2B500G",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        },
+        {
+          "retailer": "Checkers",
+          "pack": {
+            "quantity": 500,
+            "unit": "g"
+          },
+          "price_min": 99.99,
+          "price_max": 99.99,
+          "product_name": "Clover Mooi River butter brick 500g",
+          "source_url": "https://www.pricecheck.co.za/offers/201937205/Clover%2BMooi%2BRivier%2BSalted%2BButter%2BBrick%2B500G",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        }
+      ]
     },
     {
       "id": "potatoes-2000g",
@@ -485,7 +637,65 @@
         "notes": "Shoprite R39.99; Checkers R49.99 for comparable 2kg retail bags. Excludes cheaper unspecified/special packs.",
         "promotion_status": "Not verified as non-promotional",
         "retailer_location": "Not independently verified for Cape Town branch"
-      }
+      },
+      "offers": [
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 2000,
+            "unit": "g"
+          },
+          "price_min": 39.99,
+          "price_max": 39.99,
+          "product_name": "Mash & Bake Potatoes 2kg",
+          "source_url": "https://www.pricecheck.co.za/offers/237465626/Mash%2B%26%2BBake%2BPotatoes%2B2KG",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        },
+        {
+          "retailer": "Checkers",
+          "pack": {
+            "quantity": 2000,
+            "unit": "g"
+          },
+          "price_min": 49.99,
+          "price_max": 49.99,
+          "product_name": "Mash & Bake Potatoes 2kg",
+          "source_url": "https://www.pricecheck.co.za/offers/237465626/Mash%2B%26%2BBake%2BPotatoes%2B2KG",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        },
+        {
+          "retailer": "Woolworths",
+          "pack": {
+            "quantity": 2000,
+            "unit": "g"
+          },
+          "price_min": 54.99,
+          "price_max": 54.99,
+          "product_name": "Medium Potatoes 2kg",
+          "source_url": "https://www.woolworths.co.za/browse/food-south-africa/fruit-vegetables-salads/fresh-vegetables/potatoes-sweet-potatoes",
+          "format": "2kg bag",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        },
+        {
+          "retailer": "Woolworths",
+          "pack": {
+            "quantity": 3000,
+            "unit": "g"
+          },
+          "price_min": 64.99,
+          "price_max": 64.99,
+          "product_name": "Bulk Everyday Potatoes 3kg",
+          "source_url": "https://www.woolworths.co.za/browse/food-south-africa/fruit-vegetables-salads/fresh-vegetables/potatoes-sweet-potatoes",
+          "format": "3kg bag",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        }
+      ]
     },
     {
       "id": "baby-potatoes-1000g",
@@ -513,7 +723,23 @@
       "price_min": 25,
       "price_max": 45,
       "confidence": "estimated",
-      "aliases": []
+      "aliases": [],
+      "offers": [
+        {
+          "retailer": "Woolworths",
+          "pack": {
+            "quantity": 1000,
+            "unit": "g"
+          },
+          "price_min": 34.99,
+          "price_max": 34.99,
+          "product_name": "Kara Sweet Potatoes 1kg",
+          "source_url": "https://www.woolworths.co.za/browse/food-south-africa/fruit-vegetables-salads/fresh-vegetables/potatoes-sweet-potatoes",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        }
+      ]
     },
     {
       "id": "onions-1000g",
@@ -853,7 +1079,51 @@
         "notes": "Checkers, Shoprite and Pick n Pay each list R79.99. Single matching brand/SKU baseline.",
         "promotion_status": "Not verified as non-promotional",
         "retailer_location": "Not independently verified for Cape Town branch"
-      }
+      },
+      "offers": [
+        {
+          "retailer": "Checkers",
+          "pack": {
+            "quantity": 1000,
+            "unit": "g"
+          },
+          "price_min": 79.99,
+          "price_max": 79.99,
+          "product_name": "Tastic Aromatic Basmati Rice 1kg",
+          "source_url": "https://www.pricecheck.co.za/offers/195323174/Tastic%2BRice%2BAromatic%2BBasmati%2B1KG",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        },
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 1000,
+            "unit": "g"
+          },
+          "price_min": 79.99,
+          "price_max": 79.99,
+          "product_name": "Tastic Aromatic Basmati Rice 1kg",
+          "source_url": "https://www.pricecheck.co.za/offers/195323174/Tastic%2BRice%2BAromatic%2BBasmati%2B1KG",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        },
+        {
+          "retailer": "Pick n Pay",
+          "pack": {
+            "quantity": 1000,
+            "unit": "g"
+          },
+          "price_min": 79.99,
+          "price_max": 79.99,
+          "product_name": "Tastic Aromatic Basmati Rice 1kg",
+          "source_url": "https://www.pricecheck.co.za/offers/195323174/Tastic%2BRice%2BAromatic%2BBasmati%2B1KG",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        }
+      ]
     },
     {
       "id": "long-grain-white-rice-1000g",
@@ -891,7 +1161,51 @@
         "notes": "Serena Pick n Pay R49.99; Bia Checkers/Shoprite R54.99, comparable dry standard 500g.",
         "promotion_status": "Not verified as non-promotional",
         "retailer_location": "Not independently verified for Cape Town branch"
-      }
+      },
+      "offers": [
+        {
+          "retailer": "Pick n Pay",
+          "pack": {
+            "quantity": 500,
+            "unit": "g"
+          },
+          "price_min": 49.99,
+          "price_max": 49.99,
+          "product_name": "Serena Couscous 500g",
+          "source_url": "https://www.pricecheck.co.za/offers/152843245/Serene%2BSerena%2BCouscous%2B500G",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        },
+        {
+          "retailer": "Checkers",
+          "pack": {
+            "quantity": 500,
+            "unit": "g"
+          },
+          "price_min": 54.99,
+          "price_max": 54.99,
+          "product_name": "Bia Medium Couscous 500g",
+          "source_url": "https://www.pricecheck.co.za/offers/237473090/Medium%2BCouscous%2B500G",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        },
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 500,
+            "unit": "g"
+          },
+          "price_min": 54.99,
+          "price_max": 54.99,
+          "product_name": "Bia Medium Couscous 500g",
+          "source_url": "https://www.pricecheck.co.za/offers/237473090/Medium%2BCouscous%2B500G",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        }
+      ]
     },
     {
       "id": "fusilli-pasta-500g",
@@ -1036,7 +1350,37 @@
         "notes": "Checkers and Shoprite each list R21.99; 400g is tin net weight, not drained chickpeas.",
         "promotion_status": "Not verified as non-promotional",
         "retailer_location": "Not independently verified for Cape Town branch"
-      }
+      },
+      "offers": [
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 400,
+            "unit": "g"
+          },
+          "price_min": 21.99,
+          "price_max": 21.99,
+          "product_name": "Pot O' Gold Chickpeas in Brine 400g",
+          "source_url": "https://www.pricecheck.co.za/offers/237465463/Chickpeas%2BIn%2BBrine%2B400G",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        },
+        {
+          "retailer": "Checkers",
+          "pack": {
+            "quantity": 400,
+            "unit": "g"
+          },
+          "price_min": 21.99,
+          "price_max": 21.99,
+          "product_name": "Pot O' Gold Chickpeas in Brine 400g",
+          "source_url": "https://www.pricecheck.co.za/offers/237465463/Chickpeas%2BIn%2BBrine%2B400G",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        }
+      ]
     },
     {
       "id": "kidney-beans-canned-400g",
@@ -1390,7 +1734,51 @@
         "notes": "Pick n Pay R141.99; Checkers/Shoprite R149.99. Same brand and size; old range R85–R145 understated retail baseline.",
         "promotion_status": "Not verified as non-promotional",
         "retailer_location": "Not independently verified for Cape Town branch"
-      }
+      },
+      "offers": [
+        {
+          "retailer": "Pick n Pay",
+          "pack": {
+            "quantity": 500,
+            "unit": "ml"
+          },
+          "price_min": 141.99,
+          "price_max": 141.99,
+          "product_name": "Greenleaf Extra Virgin Olive Oil 500ml",
+          "source_url": "https://www.pricecheck.co.za/offers/220542055/Greenleaf%2BExtra%2BVirgin%2BOlive%2BOil%2B500ML",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        },
+        {
+          "retailer": "Checkers",
+          "pack": {
+            "quantity": 500,
+            "unit": "ml"
+          },
+          "price_min": 149.99,
+          "price_max": 149.99,
+          "product_name": "Greenleaf Extra Virgin Olive Oil 500ml",
+          "source_url": "https://www.pricecheck.co.za/offers/220542055/Greenleaf%2BExtra%2BVirgin%2BOlive%2BOil%2B500ML",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        },
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 500,
+            "unit": "ml"
+          },
+          "price_min": 149.99,
+          "price_max": 149.99,
+          "product_name": "Greenleaf Extra Virgin Olive Oil 500ml",
+          "source_url": "https://www.pricecheck.co.za/offers/220542055/Greenleaf%2BExtra%2BVirgin%2BOlive%2BOil%2B500ML",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        }
+      ]
     },
     {
       "id": "canola-oil-750ml",
@@ -1413,7 +1801,37 @@
         "notes": "Shoprite R36.99, Checkers R39.99 for the same 750ml bottle.",
         "promotion_status": "Not verified as non-promotional",
         "retailer_location": "Not independently verified for Cape Town branch"
-      }
+      },
+      "offers": [
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 750,
+            "unit": "ml"
+          },
+          "price_min": 36.99,
+          "price_max": 36.99,
+          "product_name": "Flowergold Pure Canola Oil 750ml",
+          "source_url": "https://www.pricecheck.co.za/offers/237465317/Pure%2BCanola%2BOil%2B750ML",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        },
+        {
+          "retailer": "Checkers",
+          "pack": {
+            "quantity": 750,
+            "unit": "ml"
+          },
+          "price_min": 39.99,
+          "price_max": 39.99,
+          "product_name": "Flowergold Pure Canola Oil 750ml",
+          "source_url": "https://www.pricecheck.co.za/offers/237465317/Pure%2BCanola%2BOil%2B750ML",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        }
+      ]
     },
     {
       "id": "sunflower-oil-2000ml",
@@ -1436,7 +1854,37 @@
         "notes": "Shoprite R79.99, Checkers R84.99; comparable 2L bottle.",
         "promotion_status": "Not verified as non-promotional",
         "retailer_location": "Not independently verified for Cape Town branch"
-      }
+      },
+      "offers": [
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 2000,
+            "unit": "ml"
+          },
+          "price_min": 79.99,
+          "price_max": 79.99,
+          "product_name": "Sunfoil Pure Sunflower Oil 2L",
+          "source_url": "https://www.pricecheck.co.za/offers/237462372/Pure%2BSunflower%2BSeed%2BOil%2B2L",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        },
+        {
+          "retailer": "Checkers",
+          "pack": {
+            "quantity": 2000,
+            "unit": "ml"
+          },
+          "price_min": 84.99,
+          "price_max": 84.99,
+          "product_name": "Sunfoil Pure Sunflower Oil 2L",
+          "source_url": "https://www.pricecheck.co.za/offers/237462372/Pure%2BSunflower%2BSeed%2BOil%2B2L",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published online price; Cape Town store applicability unverified"
+        }
+      ]
     },
     {
       "id": "vinegar-white-750ml",
@@ -1479,6 +1927,79 @@
       "price_max": 46,
       "confidence": "estimated",
       "aliases": []
+    },
+    {
+      "id": "frozen-potato-chips-1000g",
+      "name": "Frozen potato chips",
+      "category": "frozen",
+      "pack": {
+        "quantity": 1000,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 67.99,
+      "price_max": 74.99,
+      "confidence": "reference_supported",
+      "aliases": [],
+      "price_reviewed_on": "2026-10-15",
+      "offers": [
+        {
+          "retailer": "Woolworths",
+          "pack": {
+            "quantity": 1000,
+            "unit": "g"
+          },
+          "price_min": 67.99,
+          "price_max": 67.99,
+          "product_name": "Woolworths Frozen Oven Bake Potato Chips 1kg",
+          "source_url": "https://www.woolworths.co.za/prod/_/A-6009175018661",
+          "format": "Oven bake 1kg",
+          "observed_on": "2026-10-15"
+        },
+        {
+          "retailer": "Woolworths",
+          "pack": {
+            "quantity": 1000,
+            "unit": "g"
+          },
+          "price_min": 74.99,
+          "price_max": 74.99,
+          "product_name": "Woolworths Frozen French Fries 1kg",
+          "source_url": "https://www.woolworths.co.za/cat/For-The-Air-Fryer/_/N-l5jmrgZ1o55isp?No=0&inv=0",
+          "format": "French fries 1kg",
+          "observed_on": "2026-10-15"
+        }
+      ]
+    },
+    {
+      "id": "frozen-sweet-potato-chips-1000g",
+      "name": "Frozen sweet potato chips",
+      "category": "frozen",
+      "pack": {
+        "quantity": 1000,
+        "unit": "g",
+        "count": 1
+      },
+      "price_min": 86.99,
+      "price_max": 86.99,
+      "confidence": "reference_supported",
+      "aliases": [],
+      "price_reviewed_on": "2026-10-15",
+      "offers": [
+        {
+          "retailer": "Woolworths",
+          "pack": {
+            "quantity": 1000,
+            "unit": "g"
+          },
+          "price_min": 86.99,
+          "price_max": 86.99,
+          "product_name": "Woolworths Frozen Sweet Potato Chips 1kg",
+          "source_url": "https://www.woolworths.co.za/cat/For-The-Air-Fryer/_/N-l5jmrgZ1o55isp?No=0&inv=0",
+          "format": "standard",
+          "observed_on": "2026-10-15"
+        }
+      ]
     }
   ],
   "audit": {
@@ -1488,5 +2009,6 @@
     "scope": "Targeted basket-spread reduction audit; not an exhaustive review of every catalogue item.",
     "reference_caveat": "Research sources are retailer product listings and independent comparison services; ordinary non-promotion status not independently verified.",
     "instructions": "Use actual complete-pack quantities and each product price_min/price_max; do not silently substitute SKU or treat comparison prices as guaranteed branch checkout prices."
-  }
+  },
+  "retailer_offers_status": "Initial offer coverage; products without a named retailer observation have no retailer-specific quote. Prices are published online observations, not guaranteed branch checkout prices."
 }
