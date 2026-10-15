@@ -863,15 +863,74 @@
       "aliases": [],
       "retailer_coverage": {
         "reviewed_on": "2026-10-15",
-        "quoted_retailers": [],
-        "missing_retailers": [
-          "Checkers",
-          "Pick n Pay",
+        "quoted_retailers": [
           "Shoprite",
+          "Checkers",
+          "Pick n Pay"
+        ],
+        "missing_retailers": [
           "Woolworths"
         ],
-        "quality": "no_published_retailer_quote_yet"
-      }
+        "quality": "partial_or_complete_published_quote_coverage"
+      },
+      "offers": [
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 500,
+            "unit": "g"
+          },
+          "price_min": 24.99,
+          "price_max": 24.99,
+          "product_name": "Crystal Valley Plain Low Fat Yoghurt 500g",
+          "source_url": "https://www.pricecheck.co.za/offers/237464158/Crystal%2BValley%2BPlain%2BLow%2BFat%2BYoghurt%2B500G",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published retailer quote; exact brand/cream level indicated; store shelf price not verified"
+        },
+        {
+          "retailer": "Shoprite",
+          "pack": {
+            "quantity": 500,
+            "unit": "g"
+          },
+          "price_min": 29.99,
+          "price_max": 29.99,
+          "product_name": "LANCEWOOD Plain Double Cream Yoghurt 500g",
+          "source_url": "https://www.pricecheck.co.za/offers/237478514/Lancewood%2BPlain%2BDouble%2BCream%2BYoghurt%2B500G",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published retailer quote; exact brand/cream level indicated; store shelf price not verified"
+        },
+        {
+          "retailer": "Checkers",
+          "pack": {
+            "quantity": 500,
+            "unit": "g"
+          },
+          "price_min": 32.99,
+          "price_max": 32.99,
+          "product_name": "LANCEWOOD Plain Double Cream Yoghurt 500g",
+          "source_url": "https://www.pricecheck.co.za/offers/237478514/Lancewood%2BPlain%2BDouble%2BCream%2BYoghurt%2B500G",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published retailer quote; exact brand/cream level indicated; store shelf price not verified"
+        },
+        {
+          "retailer": "Pick n Pay",
+          "pack": {
+            "quantity": 500,
+            "unit": "g"
+          },
+          "price_min": 34.99,
+          "price_max": 34.99,
+          "product_name": "Clover Plain Double Cream Yoghurt 500g",
+          "source_url": "https://www.pricecheck.co.za/offers/241326858",
+          "format": "standard",
+          "observed_on": "2026-10-15",
+          "status": "Published retailer quote; exact brand/cream level indicated; store shelf price not verified"
+        }
+      ]
     },
     {
       "id": "plain-double-cream-yoghurt-1000g",
@@ -4338,8 +4397,8 @@
   "retailer_audit": {
     "reviewed_on": "2026-10-15",
     "products_audited": 91,
-    "products_with_offers": 55,
-    "retailer_offer_records": 117,
+    "products_with_offers": 56,
+    "retailer_offer_records": 121,
     "scope": "All catalogue products reviewed for retailer-offer coverage. Published listing quotations added when usable. Many items remain unquoted because comparable live retailer listings were not established. Existing historical offers retained.",
     "limitation": "PriceCheck comparisons are indicative, and some offers may represent promos, variable weights or matching alternative product forms. Branch checkout prices unverified.",
     "correction_note": "Removed frozen drumstick offer under generic fresh/unspecified drumsticks, and salted-water tuna under brine because those are not guaranteed equivalent. Additional named quotes for beans, tomatoes and green beans added."
