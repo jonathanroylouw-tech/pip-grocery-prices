@@ -10,13 +10,13 @@
     "Shoprite"
   ],
   "last_price_review": "2026-10-15",
-  "pricing_method": "Planning estimates of ordinary non-promotional cost for one complete purchasable retail pack; not live shelf quotes",
+  "pricing_method": "Indicative standard-pack planning ranges anchored to named online retail price observations where available; not guarantees of ordinary non-promotional in-store prices. Some products remain preliminary estimates.",
   "price_interpretation": {
     "price_min": "Lower estimated ordinary pack price in ZAR",
     "price_max": "Upper estimated ordinary pack price in ZAR",
     "confidence": {
       "estimated": "Planning judgement informed by category benchmarks; not individually retailer verified",
-      "reference_supported": "Range informed by retrieved product price references, may include special or non-target retailer observations"
+      "reference_supported": "Range anchored to named retail price observations; special status and Cape Town branch pricing are not independently verified."
     },
     "shopping_rule": "Multiply both endpoints by the integer number of complete packs to buy after accounting for available pantry stock. Do not use the midpoint.",
     "variant_rule": "Select the actual product ID/pack (regular, lean, extra-lean, ostrich, lamb, pork mince are distinct); never silently substitute products."
@@ -57,10 +57,19 @@
         "unit": "g",
         "count": 1
       },
-      "price_min": 52,
-      "price_max": 72,
-      "confidence": "estimated",
-      "aliases": []
+      "price_min": 65,
+      "price_max": 70,
+      "confidence": "reference_supported",
+      "aliases": [],
+      "price_reviewed_on": "2026-10-15",
+      "reference_product": "Regular beef mince, equivalent 500g at per-kg counter prices",
+      "price_evidence": {
+        "source": "Independent retailer price comparisons / published online listings",
+        "url": "https://www.pricecheck.co.za/offers/237462571/Beef%2BMince%2BPer%2BKg",
+        "notes": "Checkers and Shoprite R129.99/kg ≈R65 per 500g. Loose variable-weight counter pack, not a fixed 500g SKU; planning equivalent with approximate upper bound.",
+        "promotion_status": "Not verified as non-promotional",
+        "retailer_location": "Not independently verified for Cape Town branch"
+      }
     },
     {
       "id": "lean-beef-mince-500g",
@@ -71,10 +80,20 @@
         "unit": "g",
         "count": 1
       },
-      "price_min": 65,
-      "price_max": 85,
-      "confidence": "estimated",
-      "aliases": []
+      "price_min": 70,
+      "price_max": 89.99,
+      "confidence": "reference_supported",
+      "aliases": [],
+      "price_reviewed_on": "2026-10-15",
+      "reference_product": "Lean beef mince: Checkers/Shoprite per kg; PnP fixed 500g pack",
+      "price_evidence": {
+        "source": "Independent retailer price comparisons / published online listings",
+        "url": "https://www.pricecheck.co.za/offers/249606650/Pnp%2BLean%2BBeef%2BMince%2B500G",
+        "supplementary_url": "https://www.pricecheck.co.za/offers/237462555/Lean%2BBeef%2BMince%2BPer%2BKg",
+        "notes": "R139.99/kg ≈R70/500g for loose mince, PnP 500g R89.99; differences reflect both pack formats and retailers.",
+        "promotion_status": "Not verified as non-promotional",
+        "retailer_location": "Not independently verified for Cape Town branch"
+      }
     },
     {
       "id": "extra-lean-beef-mince-500g",
@@ -141,10 +160,20 @@
         "unit": "g",
         "count": 1
       },
-      "price_min": 90,
-      "price_max": 140,
-      "confidence": "estimated",
-      "aliases": []
+      "price_min": 79.99,
+      "price_max": 94.99,
+      "confidence": "reference_supported",
+      "aliases": [],
+      "price_reviewed_on": "2026-10-15",
+      "reference_product": "Ordinary fresh chicken breast fillets priced per kg",
+      "price_evidence": {
+        "source": "Independent retailer price comparisons / published online listings",
+        "url": "https://www.shapshop.online/checkers-vs-pick-n-pay",
+        "supplementary_url": "https://www.pricecheck.co.za/search?search=chicken+fillet+price+per+kg",
+        "notes": "Checkers 1kg R79.99 (Oct 12); Checkers/Shoprite Farmer's Choice six-piece fillets R84.99–94.99/kg. Excludes free-range premium. Variable weight retail packs.",
+        "promotion_status": "Not verified as non-promotional",
+        "retailer_location": "Not independently verified for Cape Town branch"
+      }
     },
     {
       "id": "chicken-thighs-bone-in-1000g",
@@ -267,10 +296,20 @@
         "unit": "each",
         "count": 1
       },
-      "price_min": 20,
-      "price_max": 32,
-      "confidence": "estimated",
-      "aliases": []
+      "price_min": 22.99,
+      "price_max": 27.99,
+      "confidence": "reference_supported",
+      "aliases": [],
+      "price_reviewed_on": "2026-10-15",
+      "reference_product": "Non-premium six-egg carton, PnP Large and Nulaid XL",
+      "price_evidence": {
+        "source": "Independent retailer price comparisons / published online listings",
+        "url": "https://www.shapshop.online/checkers-vs-pick-n-pay",
+        "supplementary_url": "https://www.pricecheck.co.za/offers/237521813/Nulaid%2BExtra%2BLarge%2BEggs%2B6%2BPack",
+        "notes": "PnP Large six pack R22.99 (Oct 12), Checkers Nulaid XL six pack R27.99. Brands/egg grades differ; excludes suspected outlier R11.99.",
+        "promotion_status": "Not verified as non-promotional",
+        "retailer_location": "Not independently verified for Cape Town branch"
+      }
     },
     {
       "id": "large-eggs-18each",
@@ -295,10 +334,19 @@
         "unit": "ml",
         "count": 1
       },
-      "price_min": 16,
-      "price_max": 23,
-      "confidence": "estimated",
-      "aliases": []
+      "price_min": 16.89,
+      "price_max": 17.99,
+      "confidence": "reference_supported",
+      "aliases": [],
+      "price_reviewed_on": "2026-10-15",
+      "reference_product": "Crystal Valley full cream long-life milk 1L",
+      "price_evidence": {
+        "source": "Independent retailer price comparisons / published online listings",
+        "url": "https://www.pricecheck.co.za/offers/237462399/Crystal%2BValley%2BFull%2BCream%2BLong%2BLife%2BMilk%2B1L",
+        "notes": "Shoprite R16.89, Checkers R17.99. UHT milk, not chilled fresh milk.",
+        "promotion_status": "Not verified as non-promotional",
+        "retailer_location": "Not independently verified for Cape Town branch"
+      }
     },
     {
       "id": "plain-yoghurt-500g",
@@ -393,10 +441,19 @@
         "unit": "g",
         "count": 1
       },
-      "price_min": 80,
-      "price_max": 115,
-      "confidence": "estimated",
-      "aliases": []
+      "price_min": 89.99,
+      "price_max": 99.99,
+      "confidence": "reference_supported",
+      "aliases": [],
+      "price_reviewed_on": "2026-10-15",
+      "reference_product": "Clover Mooi River salted butter brick 500g",
+      "price_evidence": {
+        "source": "Independent retailer price comparisons / published online listings",
+        "url": "https://www.pricecheck.co.za/offers/201937205/Clover%2BMooi%2BRivier%2BSalted%2BButter%2BBrick%2B500G",
+        "notes": "Shoprite R89.99; Checkers R99.99. True butter, not blended spread.",
+        "promotion_status": "Not verified as non-promotional",
+        "retailer_location": "Not independently verified for Cape Town branch"
+      }
     },
     {
       "id": "potatoes-2000g",
@@ -407,10 +464,19 @@
         "unit": "g",
         "count": 1
       },
-      "price_min": 30,
-      "price_max": 55,
-      "confidence": "estimated",
-      "aliases": []
+      "price_min": 39.99,
+      "price_max": 49.99,
+      "confidence": "reference_supported",
+      "aliases": [],
+      "price_reviewed_on": "2026-10-15",
+      "reference_product": "Freshmark Mash & Bake/Boil & Roast potatoes 2kg",
+      "price_evidence": {
+        "source": "Independent retailer price comparisons / published online listings",
+        "url": "https://www.pricecheck.co.za/offers/237465626/Mash%2B%26%2BBake%2BPotatoes%2B2KG",
+        "notes": "Shoprite R39.99; Checkers R49.99 for comparable 2kg retail bags. Excludes cheaper unspecified/special packs.",
+        "promotion_status": "Not verified as non-promotional",
+        "retailer_location": "Not independently verified for Cape Town branch"
+      }
     },
     {
       "id": "baby-potatoes-1000g",
@@ -449,10 +515,19 @@
         "unit": "g",
         "count": 1
       },
-      "price_min": 20,
-      "price_max": 38,
-      "confidence": "estimated",
-      "aliases": []
+      "price_min": 24.99,
+      "price_max": 29.99,
+      "confidence": "reference_supported",
+      "aliases": [],
+      "price_reviewed_on": "2026-10-15",
+      "reference_product": "Freshmark ordinary brown onions 1kg bag",
+      "price_evidence": {
+        "source": "Independent retailer price comparisons / published online listings",
+        "url": "https://www.pricecheck.co.za/search?search=onions+1kg",
+        "notes": "Shoprite R24.99, Checkers R29.99 for same 1kg ordinary onions; excludes peeled/red.",
+        "promotion_status": "Not verified as non-promotional",
+        "retailer_location": "Not independently verified for Cape Town branch"
+      }
     },
     {
       "id": "tomatoes-1000g",
@@ -463,10 +538,20 @@
         "unit": "g",
         "count": 1
       },
-      "price_min": 22,
-      "price_max": 45,
-      "confidence": "estimated",
-      "aliases": []
+      "price_min": 29.99,
+      "price_max": 39.99,
+      "confidence": "reference_supported",
+      "aliases": [],
+      "price_reviewed_on": "2026-10-15",
+      "reference_product": "Ordinary fresh tomatoes 1kg",
+      "price_evidence": {
+        "source": "Independent retailer price comparisons / published online listings",
+        "url": "https://www.shapshop.online/checkers-vs-pick-n-pay",
+        "supplementary_url": "https://www.pricecheck.co.za/offers/237465960/Tomatoe%2B1KG",
+        "notes": "Oct 12 Checkers/PnP each R34.99/kg and Shoprite 1kg R39.99. A lower Checkers R19.99 snapshot exists but ordinary non-promo status not established; retained estimate floor below Oct 12 observation.",
+        "promotion_status": "Not verified as non-promotional",
+        "retailer_location": "Not independently verified for Cape Town branch"
+      }
     },
     {
       "id": "roma-tomatoes-1000g",
@@ -477,10 +562,19 @@
         "unit": "g",
         "count": 1
       },
-      "price_min": 23,
-      "price_max": 48,
-      "confidence": "estimated",
-      "aliases": []
+      "price_min": 29.99,
+      "price_max": 39.99,
+      "confidence": "reference_supported",
+      "aliases": [],
+      "price_reviewed_on": "2026-10-15",
+      "reference_product": "Freshmark Roma tomatoes 1kg",
+      "price_evidence": {
+        "source": "Independent retailer price comparisons / published online listings",
+        "url": "https://www.pricecheck.co.za/offers/237478723/Roma%2BTomatoes%2B1KG",
+        "notes": "Checkers R29.99, Shoprite R39.99.",
+        "promotion_status": "Not verified as non-promotional",
+        "retailer_location": "Not independently verified for Cape Town branch"
+      }
     },
     {
       "id": "garlic-bulb-1each",
@@ -519,10 +613,19 @@
         "unit": "g",
         "count": 1
       },
-      "price_min": 17,
-      "price_max": 30,
-      "confidence": "estimated",
-      "aliases": []
+      "price_min": 19.99,
+      "price_max": 19.99,
+      "confidence": "reference_supported",
+      "aliases": [],
+      "price_reviewed_on": "2026-10-15",
+      "reference_product": "Freshmark large carrots 1kg",
+      "price_evidence": {
+        "source": "Independent retailer price comparisons / published online listings",
+        "url": "https://www.pricecheck.co.za/offers/237463722/Large%2BCarrots%2B1KG",
+        "notes": "Checkers and Shoprite each R19.99; same observed price, not a guaranteed future checkout price.",
+        "promotion_status": "Not verified as non-promotional",
+        "retailer_location": "Not independently verified for Cape Town branch"
+      }
     },
     {
       "id": "whole-butternut-1each",
@@ -729,10 +832,19 @@
         "unit": "g",
         "count": 1
       },
-      "price_min": 58,
-      "price_max": 85,
+      "price_min": 79.99,
+      "price_max": 79.99,
       "confidence": "reference_supported",
-      "aliases": []
+      "aliases": [],
+      "price_reviewed_on": "2026-10-15",
+      "reference_product": "Tastic Rices of the World Basmati rice 1kg",
+      "price_evidence": {
+        "source": "Independent retailer price comparisons / published online listings",
+        "url": "https://www.pricecheck.co.za/offers/195323174/Tastic%2BRice%2BAromatic%2BBasmati%2B1KG",
+        "notes": "Checkers, Shoprite and Pick n Pay each list R79.99. Single matching brand/SKU baseline.",
+        "promotion_status": "Not verified as non-promotional",
+        "retailer_location": "Not independently verified for Cape Town branch"
+      }
     },
     {
       "id": "long-grain-white-rice-1000g",
@@ -757,10 +869,20 @@
         "unit": "g",
         "count": 1
       },
-      "price_min": 45,
-      "price_max": 60,
+      "price_min": 49.99,
+      "price_max": 54.99,
       "confidence": "reference_supported",
-      "aliases": []
+      "aliases": [],
+      "price_reviewed_on": "2026-10-15",
+      "reference_product": "Serena/Bia standard couscous 500g",
+      "price_evidence": {
+        "source": "Independent retailer price comparisons / published online listings",
+        "url": "https://www.pricecheck.co.za/offers/152843245/Serene%2BSerena%2BCouscous%2B500G",
+        "supplementary_url": "https://www.pricecheck.co.za/offers/237473090/Medium%2BCouscous%2B500G",
+        "notes": "Serena Pick n Pay R49.99; Bia Checkers/Shoprite R54.99, comparable dry standard 500g.",
+        "promotion_status": "Not verified as non-promotional",
+        "retailer_location": "Not independently verified for Cape Town branch"
+      }
     },
     {
       "id": "fusilli-pasta-500g",
@@ -771,10 +893,20 @@
         "unit": "g",
         "count": 1
       },
-      "price_min": 16,
-      "price_max": 32,
-      "confidence": "estimated",
-      "aliases": []
+      "price_min": 19.99,
+      "price_max": 24.99,
+      "confidence": "reference_supported",
+      "aliases": [],
+      "price_reviewed_on": "2026-10-15",
+      "reference_product": "Toscana / Fatti's & Moni's fusilli 500g",
+      "price_evidence": {
+        "source": "Independent retailer price comparisons / published online listings",
+        "url": "https://www.pricecheck.co.za/search?search=fusilli+pasta",
+        "supplementary_url": "https://www.pricecheck.co.za/offers/237464320/Fusilli%2BPasta%2BScrews%2B500G",
+        "notes": "Toscana R19.99, Fatti's & Moni's R24.99 at Checkers/Shoprite. Two standard shelf brands, excludes PnP promo.",
+        "promotion_status": "Not verified as non-promotional",
+        "retailer_location": "Not independently verified for Cape Town branch"
+      }
     },
     {
       "id": "spaghetti-500g",
@@ -1051,10 +1183,19 @@
         "unit": "g",
         "count": 1
       },
-      "price_min": 18,
-      "price_max": 35,
-      "confidence": "estimated",
-      "aliases": []
+      "price_min": 27.99,
+      "price_max": 29.99,
+      "confidence": "reference_supported",
+      "aliases": [],
+      "price_reviewed_on": "2026-10-15",
+      "reference_product": "Rajah Mild & Spicy Curry Powder 100g",
+      "price_evidence": {
+        "source": "Independent retailer price comparisons / published online listings",
+        "url": "https://www.pricecheck.co.za/offers/237462484/Mild%2B%26%2BSpicy%2BCurry%2BPowder%2BBox%2B100G",
+        "notes": "Shoprite R27.99, Checkers/PnP R29.99.",
+        "promotion_status": "Not verified as non-promotional",
+        "retailer_location": "Not independently verified for Cape Town branch"
+      }
     },
     {
       "id": "turmeric-ground-100g",
@@ -1219,10 +1360,19 @@
         "unit": "ml",
         "count": 1
       },
-      "price_min": 85,
-      "price_max": 145,
-      "confidence": "estimated",
-      "aliases": []
+      "price_min": 141.99,
+      "price_max": 149.99,
+      "confidence": "reference_supported",
+      "aliases": [],
+      "price_reviewed_on": "2026-10-15",
+      "reference_product": "Greenleaf extra virgin olive oil 500ml",
+      "price_evidence": {
+        "source": "Independent retailer price comparisons / published online listings",
+        "url": "https://www.pricecheck.co.za/offers/220542055/Greenleaf%2BExtra%2BVirgin%2BOlive%2BOil%2B500ML",
+        "notes": "Pick n Pay R141.99; Checkers/Shoprite R149.99. Same brand and size; old range R85–R145 understated retail baseline.",
+        "promotion_status": "Not verified as non-promotional",
+        "retailer_location": "Not independently verified for Cape Town branch"
+      }
     },
     {
       "id": "canola-oil-750ml",
@@ -1294,5 +1444,13 @@
       "confidence": "estimated",
       "aliases": []
     }
-  ]
+  ],
+  "audit": {
+    "last_audit_date": "2026-10-15",
+    "researched_products_updated": 16,
+    "products_unreviewed_this_pass": 73,
+    "scope": "Targeted basket-spread reduction audit; not an exhaustive review of every catalogue item.",
+    "reference_caveat": "Research sources are retailer product listings and independent comparison services; ordinary non-promotion status not independently verified.",
+    "instructions": "Use actual complete-pack quantities and each product price_min/price_max; do not silently substitute SKU or treat comparison prices as guaranteed branch checkout prices."
+  }
 }
