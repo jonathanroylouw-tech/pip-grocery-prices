@@ -56,3 +56,13 @@ for label,u in {
   matches=re.findall(r'https?[^\\\"<> ]+(?:pexels\\.com|pexels-photo)[^\\\"<> ]*',t,re.I)
   print('IMAGESEARCH',label,r.status_code,len(r.content),'match',len(matches),matches[:2],'anchors',href[:2],flush=True)
  except Exception as e:print('IMAGESEARCH_ERROR',label,str(e)[:130],flush=True)
+
+for dish in ('chicken pizza','spaghetti bolognese','bobotie','hake lemon'):
+ for src in ('commons','openverse'):
+  try:
+   url='https://commons.wikimedia.org/w/api.php' if src=='commons' else 'https://api.openverse.org/v1/images/'
+   params=({'action':'query','generator':'search','gsrsearch':dish+' food','gsrnamespace':6,'gsrlimit':12,'prop':'imageinfo','iiprop':'url|size|extmetadata','iiurlwidth':700,'format':'json'} if src=='commons' else {'q':dish,'page_size':20,'license':'cc0,pdm,by,by-sa','mature':'false'})
+   r=requests.get(url,params=params,timeout=12,headers={'User-Agent':'PIP Recipe Image Research/1.2'})
+   j=r.json() if r.ok else {}
+   print('DISH_PROBE',dish,src,r.status_code,len(r.content),len(j.get('query',{}).get('pages',{})) if src=='commons' else len(j.get('results',[])),str(j)[:100] if not r.ok else '',flush=True)
+  except Exception as e:print('DISH_PROBE_EXC',dish,src,str(e)[:130],flush=True)
