@@ -1,0 +1,26 @@
+name: PIP premium photo style proof
+on:
+  push:
+    branches: [pip-recipe-photo-contact-sheet]
+    paths:
+      - scripts/build_professional_photo_proof.py
+      - .github/workflows/pip_photo_style_proof.yml
+permissions:
+  contents: write
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pillow requests
+      - run: python scripts/build_professional_photo_proof.py
+      - name: Publish preview image and Pexels credits
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add previews/curated/PIP_Professional_Real_Photo_Picks_13.jpg previews/curated/PIP_Pexels_Photo_Picks.json
+          git commit -m "Preview 13 verified Pexels recipe photos" || exit 0
+          git push
