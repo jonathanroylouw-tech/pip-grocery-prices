@@ -43,3 +43,16 @@ for q in ['site:pexels.com/photo/ chicken curry rice','site:pexels.com/photo/ be
   links=re.findall(r'<link>(.*?)</link>',r.text)
   print('RSS',q,r.status_code,len(r.content),links[:7],flush=True)
  except Exception as e:print('RSS_ERROR',q,str(e),flush=True)
+
+for label,u in {
+'bingimage':'https://www.bing.com/images/search?q=chicken+wrap+site%3Apexels.com%2Fphoto%2F',
+'googleimage':'https://www.google.com/search?tbm=isch&q=chicken+wrap+site%3Apexels.com%2Fphoto%2F',
+'duckduckgo':'https://duckduckgo.com/?q=site%3Apexels.com%2Fphoto%2F+chicken+wrap&iax=images&ia=images',
+}.items():
+ try:
+  r=requests.get(u,headers={'User-Agent':'Mozilla/5.0'},timeout=15)
+  t=r.text
+  href=re.findall(r'<a[^>]+href=[\\\"\\\']([^\\\"\\\']+)',t)
+  matches=re.findall(r'https?[^\\\"<> ]+(?:pexels\\.com|pexels-photo)[^\\\"<> ]*',t,re.I)
+  print('IMAGESEARCH',label,r.status_code,len(r.content),'match',len(matches),matches[:2],'anchors',href[:2],flush=True)
+ except Exception as e:print('IMAGESEARCH_ERROR',label,str(e)[:130],flush=True)
