@@ -1,0 +1,32 @@
+name: PIP 82 photo curated second pass
+on:
+  push:
+    branches: [pip-food-photos-curated-v2]
+    paths:
+      - scripts/build_82_curated.py
+      - .github/workflows/pip_82_photo_curated.yml
+permissions:
+  contents: write
+jobs:
+  curate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pillow requests
+      - name: Build licensed 82-recipe image sheet
+        run: python scripts/build_82_curated.py
+      - name: Publish actual PNG and image-source ledger on isolated preview branch
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add photo_review
+          git commit -m "Curated image selection and source credits for 82 PIP recipes" || exit 0
+          git push
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pip-82-curated-real-photos
+          path: photo_review/
