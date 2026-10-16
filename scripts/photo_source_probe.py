@@ -29,3 +29,10 @@ for label,u in additional.items():
   pics=re.findall(r'(?:https?://)?(?:www\\.)?pexels\\.com/photo/[^\\\\\"<> ]+',r.text)[:4]
   print(json.dumps({'label':label,'status':r.status_code,'bytes':len(r.content),'type':r.headers.get('Content-Type'),'pexels_links':pics,'text':r.text[:80] if 'text' in r.headers.get('Content-Type','') else ''}),flush=True)
  except Exception as e:print(label,'ERROR',str(e),flush=True)
+
+for label in ('google_pexels','bing_pexels'):
+ try:
+  u=additional[label]; t=requests.get(u,timeout=9,headers={'User-Agent':'Mozilla/5.0'}).text
+  ix=[m.start() for m in re.finditer('pexels',t,re.I)][:6]
+  print('SNIPPET',label,'hits',len(ix),[t[max(0,i-100):i+200] for i in ix],flush=True)
+ except Exception as e:print('SNIPERR',str(e))
