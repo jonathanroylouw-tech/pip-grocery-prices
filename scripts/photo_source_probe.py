@@ -66,3 +66,11 @@ for dish in ('chicken pizza','spaghetti bolognese','bobotie','hake lemon'):
    j=r.json() if r.ok else {}
    print('DISH_PROBE',dish,src,r.status_code,len(r.content),len(j.get('query',{}).get('pages',{})) if src=='commons' else len(j.get('results',[])),str(j)[:100] if not r.ok else '',flush=True)
   except Exception as e:print('DISH_PROBE_EXC',dish,src,str(e)[:130],flush=True)
+
+for label,u in {'jina_pexels':'https://r.jina.ai/https://www.pexels.com/search/beef%20tacos/','jina_pexels_search':'https://r.jina.ai/https://www.pexels.com/search/chicken%20wrap/'}.items():
+ try:
+  r=requests.get(u,timeout=16,headers={'User-Agent':'Mozilla/5.0'})
+  hits=re.findall('https?://[^\\\\\"\\n ]+',r.text)
+  images=[x for x in hits if 'pexels' in x][:9]
+  print('READER',label,r.status_code,len(r.content),'pexels_urls',images,flush=True)
+ except Exception as e:print('READER_ERR',label,str(e)[:130],flush=True)
