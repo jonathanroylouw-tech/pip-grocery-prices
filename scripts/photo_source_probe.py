@@ -15,3 +15,17 @@ for label,u in samples.items():
   imgs=re.findall(r'https?[^\" ]+?(?:jpg|jpeg|webp)(?:\?[^\" ]*)?',t,re.I)
   print(json.dumps(dict(label=label,status=r.status_code,size=len(r.content),url=r.url,images=imgs[:2],head=t[:90]),ensure_ascii=False),flush=True)
  except Exception as e:print(label,'ERROR',str(e),flush=True)
+
+additional={
+'pexels_direct':'https://images.pexels.com/photos/7613554/pexels-photo-7613554.jpeg?auto=compress&cs=tinysrgb&w=640',
+'google_pexels':'https://www.google.com/search?q=site%3Apexels.com%2Fphoto%2F+chicken+wrap+food+photo',
+'google_south_african':'https://www.google.com/search?q=site%3Apexels.com%2Fphoto%2F+bobotie+south+african+food',
+'bing_pexels':'https://www.bing.com/search?q=site%3Apexels.com%2Fphoto%2F+chicken+curry+rice',
+'rawpixel':'https://www.rawpixel.com/search/real%20chicken%20curry%20food%20photograph'
+}
+for label,u in additional.items():
+ try:
+  r=requests.get(u,headers={'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36'},timeout=12)
+  pics=re.findall(r'(?:https?://)?(?:www\\.)?pexels\\.com/photo/[^\\\\\"<> ]+',r.text)[:4]
+  print(json.dumps({'label':label,'status':r.status_code,'bytes':len(r.content),'type':r.headers.get('Content-Type'),'pexels_links':pics,'text':r.text[:80] if 'text' in r.headers.get('Content-Type','') else ''}),flush=True)
+ except Exception as e:print(label,'ERROR',str(e),flush=True)
