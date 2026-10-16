@@ -36,3 +36,10 @@ for label in ('google_pexels','bing_pexels'):
   ix=[m.start() for m in re.finditer('pexels',t,re.I)][:6]
   print('SNIPPET',label,'hits',len(ix),[t[max(0,i-100):i+200] for i in ix],flush=True)
  except Exception as e:print('SNIPERR',str(e))
+
+for q in ['site:pexels.com/photo/ chicken curry rice','site:pexels.com/photo/ beef tacos','site:pexels.com/photo/ boerewors mash']:
+ try:
+  r=requests.get('https://www.bing.com/search',params={'q':q,'format':'rss'},timeout=14,headers={'User-Agent':'Mozilla/5.0'})
+  links=re.findall(r'<link>(.*?)</link>',r.text)
+  print('RSS',q,r.status_code,len(r.content),links[:7],flush=True)
+ except Exception as e:print('RSS_ERROR',q,str(e),flush=True)
