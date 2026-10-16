@@ -1,0 +1,27 @@
+name: PIP real 82 photo contact sheet V3
+on:
+  push:
+    branches: [pip-food-photos-curated-v2]
+    paths:
+      - scripts/build_pip_photo_v3.py
+      - .github/workflows/pip_photo_v3.yml
+permissions:
+  contents: write
+jobs:
+  photo-approval:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pillow requests
+      - run: python scripts/build_pip_photo_v3.py
+      - name: Publish offline PNG and photographic source ledger
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add photo_review/PIP_82_Real_Food_Review_V3.png photo_review/PIP_82_Real_Food_Review_V3_Preview.jpg photo_review/PIP_82_Real_Food_Sources_V3.json
+          git commit -m "Assemble 82 photo V3 curated offline contact sheet" || exit 0
+          git push
