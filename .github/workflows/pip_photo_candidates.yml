@@ -1,0 +1,32 @@
+name: PIP real food photo candidate research
+on:
+  push:
+    branches: [pip-recipe-photo-contact-sheet]
+    paths:
+      - scripts/build_recipe_candidate_sheet.py
+      - .github/workflows/pip_photo_candidates.yml
+permissions:
+  contents: write
+jobs:
+  photos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install requests pillow
+      - name: Research and build 82 recipe candidate pages
+        run: python scripts/build_recipe_candidate_sheet.py
+      - name: Publish photo contact pages and licence sources on this isolated preview branch
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add previews/curated
+          git commit -m "Real food photo candidates: 82 recipe visual review" || exit 0
+          git push
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pip-photography-candidates
+          path: previews/curated/
