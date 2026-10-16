@@ -1,0 +1,19 @@
+name: PIP photo source availability probe
+on:
+  push:
+    branches: [pip-recipe-photo-contact-sheet]
+    paths:
+      - scripts/photo_source_probe.py
+      - .github/workflows/pip_photo_source_probe.yml
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests beautifulsoup4
+      - run: python scripts/photo_source_probe.py
