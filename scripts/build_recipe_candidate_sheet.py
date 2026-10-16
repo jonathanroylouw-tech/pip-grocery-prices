@@ -3,7 +3,7 @@
 Produce local offline approval mosaics and explicit CC attribution records.
 No generic fallback to another dish and no AI-generated images.
 """
-import concurrent.futures,io,re,ast,json,os,math,time,statistics,hashlib
+import concurrent.futures,io,re,ast,json,os,math,time,statistics,hashlib,threading
 from PIL import Image,ImageDraw,ImageFont,ImageOps,ImageStat,ImageFilter,ImageChops
 from pathlib import Path
 import requests
@@ -21,6 +21,25 @@ BAD=("vector","artwork","illustration","anime","sticker","poster","book cover","
 STOP={"and","with","style","roasted","home","homemade","mild","easy","classic","warm","hearty","in","on","&","of","style","inspired","south","african","fresh","sauce","bowl","recipe","served","plate"}
 SYN={"fries":["chips","fries"],"chips":["fries","chips"],"beef":["beef","steak","meat","mince","ground"],"chicken":["chicken","poultry"],"potatoes":["potato","potatoes"],"vegetable":["vegetables","veggie","vegetable"],"beans":["beans","bean"],"fish":["fish","hake"],"tuna":["tuna"],"curry":["curry"],"lentil":["lentils","lentil"],"eggs":["egg","eggs"],"wrap":["wrap","wraps","tortilla"],"pizza":["pizza"],"pasta":["pasta"],"noodle":["noodles","noodle"],"soup":["soup"],"lasagne":["lasagne","lasagna"],"bobotie":["bobotie"],"koftas":["kofta","koftas"],"shakshuka":["shakshuka"],"couscous":["couscous"],"schnitzel":["schnitzel"],"risotto":["risotto"],"moussaka":["moussaka"],"tacos":["taco","tacos"],"taco":["taco","tacos"],"pap":["pap","mealie"],"boerewors":["boerewors","sausage"],"frittata":["frittata"],"stew":["stew"],"chilli":["chili","chilli"],"chili":["chili","chilli"],"biryani":["biryani"],"gnocchi":["gnocchi"],"fried":["fried"],"baked":["baked"],"butternut":["butternut","squash"],"hake":["hake","fish"]}
 SESH=requests.Session(); SESH.headers.update(HDR)
+_api_lock=threading.Lock()
+_next_api=[0.0]
+def paced_get(url,params):
+    for attempt in range(5):
+        with _api_lock:
+            wait=max(0,_next_api[0]-time.monotonic())
+            if wait:time.sleep(wait)
+            _next_api[0]=time.monotonic()+1.1
+        try:
+            r=requests.get(url,params=params,timeout=16,headers=HDR)
+            if r.status_code in (429,403,503):
+                print("API_RETRY",r.status_code,url.split("/")[2],flush=True)
+                time.sleep(min(15,2+3*attempt))
+                continue
+            return r
+        except Exception as e:
+            print("API_EXC",str(e)[:70],flush=True)
+            time.sleep(1+attempt)
+    return None
 def tokens(s):
     return [w for w in re.findall(r"[a-zA-Z]{3,}",s.lower()) if w not in STOP]
 def meaning_score(p,q):
@@ -74,8 +93,8 @@ def eval_photo(im):
 def openverse(q):
     items=[]
     try:
-        r=requests.get("https://api.openverse.org/v1/images/",params={"q":q,"page_size":35,"license":"cc0,pdm,by,by-sa","mature":"false"},timeout=13,headers=HDR)
-        if not r.ok:return items
+        r=paced_get("https://api.openverse.org/v1/images/",{"q":q,"page_size":25,"license":"cc0,pdm,by,by-sa","mature":"false"})
+        if r is None or not r.ok:return items
         for p in r.json().get("results",[]):
             if p.get("license") not in ("cc0","pdm","by","by-sa"):continue
             items.append({"provider":p.get("source") or "openverse","title":p.get("title") or "","tags":p.get("tags") or [],"url":p.get("thumbnail") or p.get("url"),"original":p.get("url"),"page":p.get("foreign_landing_url"),"creator":p.get("creator"),"license":p.get("license"),"width":p.get("width"),"height":p.get("height")})
@@ -84,12 +103,12 @@ def openverse(q):
 def commons(q):
     data=[]
     try:
-        resp=requests.get("https://commons.wikimedia.org/w/api.php",params={"action":"query","generator":"search","gsrsearch":q+" food","gsrnamespace":6,"gsrlimit":12,"prop":"imageinfo","iiprop":"url|size|extmetadata","iiurlwidth":"700","format":"json"},timeout=12,headers=HDR)
-        if not resp.ok:return data
+        resp=paced_get("https://commons.wikimedia.org/w/api.php",{"action":"query","generator":"search","gsrsearch":q+" food","gsrnamespace":6,"gsrlimit":12,"prop":"imageinfo","iiprop":"url|size|extmetadata","iiurlwidth":"700","format":"json"})
+        if resp is None or not resp.ok:return data
         for item in resp.json().get("query",{}).get("pages",{}).values():
             a=(item.get("imageinfo") or [{}])[0]
             mt=a.get("mime") or ""
-            if "svg" in a.get("url",""):continue
+            if not re.search(r"\.(jpe?g|png|webp)(\?|$)",a.get("url",""),re.I):continue
             l=(a.get("extmetadata",{}).get("LicenseShortName",{}) or {}).get("value","")
             # Commons photos: keep only licence types appropriate to preview/commercial reuse
             if not any(x in l.lower() for x in ("cc by","cc0","public domain","pd-","cc-by")):continue
@@ -142,7 +161,7 @@ def fnt(size,bold=False):
 print("Beginning 82 multi-source photo searches",flush=True)
 ROWS_PER_PAGE=21
 results=[None]*82
-with concurrent.futures.ThreadPoolExecutor(max_workers=7) as ex:
+with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:
     future={ex.submit(task,i):i for i in range(82)}
     for t in concurrent.futures.as_completed(future):
         try:i,found=t.result()
