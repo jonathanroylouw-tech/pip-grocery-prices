@@ -1,0 +1,838 @@
+[
+  {
+    "recipe_no": 1,
+    "recipe": "Homemade burgers & chips",
+    "search": "beef hamburger french fries",
+    "candidates": [
+      {
+        "provider": "commons",
+        "title": "Beef brisket at Dusty's (41094871630).jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Beef_brisket_at_Dusty%27s_%2841094871630%29.jpg/960px-Beef_brisket_at_Dusty%27s_%2841094871630%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/1/19/Beef_brisket_at_Dusty%27s_%2841094871630%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:Beef_brisket_at_Dusty%27s_(41094871630).jpg",
+        "creator": "Ruth Hartnup from Vancouver, Canada",
+        "license": "CC BY 2.0",
+        "width": 2458,
+        "height": 3268,
+        "match_score": 7.2,
+        "visual_score": 8.6,
+        "final_score": 15.8,
+        "recipe_no": 1,
+        "candidate": "A"
+      },
+      {
+        "provider": "commons",
+        "title": "McDonald's Mighty Jalape\u00f1o and fries full meal.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/McDonald%27s_Mighty_Jalape%C3%B1o_and_fries_full_meal.jpg/960px-McDonald%27s_Mighty_Jalape%C3%B1o_and_fries_full_meal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/1/11/McDonald%27s_Mighty_Jalape%C3%B1o_and_fries_full_meal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:McDonald%27s_Mighty_Jalape%C3%B1o_and_fries_full_meal.jpg",
+        "creator": "JIP",
+        "license": "CC BY-SA 4.0",
+        "width": 4608,
+        "height": 3456,
+        "match_score": 7.2,
+        "visual_score": 5.6,
+        "final_score": 12.8,
+        "recipe_no": 1,
+        "candidate": "B"
+      }
+    ]
+  },
+  {
+    "recipe_no": 2,
+    "recipe": "Steak & roast potatoes",
+    "search": "steak roasted potatoes",
+    "candidates": [
+      {
+        "provider": "commons",
+        "title": "DFC 2244 Juicy grilled steak smothered in savory brown gravy served with roasted potatoes saut\u00e9ed vegetables and a crisp mixed salad.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/DFC_2244_Juicy_grilled_steak_smothered_in_savory_brown_gravy_served_with_roasted_potatoes_saut%C3%A9ed_vegetables_and_a_crisp_mixed_salad.jpg/960px-DFC_2244_Juicy_grilled_steak_smothered_in_savory_brown_gravy_served_with_roasted_potatoes_saut%C3%A9ed_vegetables_and_a_crisp_mixed_salad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/8/8e/DFC_2244_Juicy_grilled_steak_smothered_in_savory_brown_gravy_served_with_roasted_potatoes_saut%C3%A9ed_vegetables_and_a_crisp_mixed_salad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:DFC_2244_Juicy_grilled_steak_smothered_in_savory_brown_gravy_served_with_roasted_potatoes_saut%C3%A9ed_vegetables_and_a_crisp_mixed_salad.jpg",
+        "creator": "PattayaPatrol",
+        "license": "CC BY-SA 4.0",
+        "width": 5568,
+        "height": 3712,
+        "match_score": 10.7,
+        "visual_score": 8.6,
+        "final_score": 19.3,
+        "recipe_no": 2,
+        "candidate": "A"
+      },
+      {
+        "provider": "commons",
+        "title": "Liat Portal for Foodie Disorder - Homemade Steak Lunch with Broccoli and Potatoes.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Liat_Portal_for_Foodie_Disorder_-_Homemade_Steak_Lunch_with_Broccoli_and_Potatoes.jpg/960px-Liat_Portal_for_Foodie_Disorder_-_Homemade_Steak_Lunch_with_Broccoli_and_Potatoes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Liat_Portal_for_Foodie_Disorder_-_Homemade_Steak_Lunch_with_Broccoli_and_Potatoes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Homemade_Steak_Lunch_with_Broccoli_and_Potatoes.jpg",
+        "creator": "HaJunkiyada",
+        "license": "CC BY-SA 4.0",
+        "width": 3024,
+        "height": 4032,
+        "match_score": 10.7,
+        "visual_score": 8.6,
+        "final_score": 19.3,
+        "recipe_no": 2,
+        "candidate": "B"
+      },
+      {
+        "provider": "commons",
+        "title": "-2019-12-15 Steak and kidney pudding, cabbage, sprouts and roast potatoes, Trimingham, Norfolk (1).JPG",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/-2019-12-15_Steak_and_kidney_pudding%2C_cabbage%2C_sprouts_and_roast_potatoes%2C_Trimingham%2C_Norfolk_%281%29.JPG/960px--2019-12-15_Steak_and_kidney_pudding%2C_cabbage%2C_sprouts_and_roast_potatoes%2C_Trimingham%2C_Norfolk_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/8/86/-2019-12-15_Steak_and_kidney_pudding%2C_cabbage%2C_sprouts_and_roast_potatoes%2C_Trimingham%2C_Norfolk_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:-2019-12-15_Steak_and_kidney_pudding,_cabbage,_sprouts_and_roast_potatoes,_Trimingham,_Norfolk_(1).JPG",
+        "creator": "\n\n\n\nKolforn (Kolforn)\nI'd appreciate if you could mail me (Kolforn@gmail.com) if you want to use thi",
+        "license": "CC BY-SA 4.0",
+        "width": 2115,
+        "height": 2016,
+        "match_score": 10.7,
+        "visual_score": 8.6,
+        "final_score": 19.3,
+        "recipe_no": 2,
+        "candidate": "C"
+      }
+    ]
+  },
+  {
+    "recipe_no": 3,
+    "recipe": "Chicken breasts & mushrooms",
+    "search": "chicken breast mushroom sauce",
+    "candidates": [
+      {
+        "provider": "commons",
+        "title": "Pesto and spinich stuffed chicken breasts with mushroom sauce.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Pesto_and_spinich_stuffed_chicken_breasts_with_mushroom_sauce.jpg/960px-Pesto_and_spinich_stuffed_chicken_breasts_with_mushroom_sauce.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/0/05/Pesto_and_spinich_stuffed_chicken_breasts_with_mushroom_sauce.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:Pesto_and_spinich_stuffed_chicken_breasts_with_mushroom_sauce.jpg",
+        "creator": "Jon Sullivan",
+        "license": "Public domain",
+        "width": 1000,
+        "height": 750,
+        "match_score": 13.4,
+        "visual_score": 7.7,
+        "final_score": 21.1,
+        "recipe_no": 3,
+        "candidate": "A"
+      },
+      {
+        "provider": "commons",
+        "title": "Chicken mushrooms sauces.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Chicken_mushrooms_sauces.jpg/960px-Chicken_mushrooms_sauces.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Chicken_mushrooms_sauces.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:Chicken_mushrooms_sauces.jpg",
+        "creator": "Jon Sullivan",
+        "license": "Public domain",
+        "width": 1000,
+        "height": 750,
+        "match_score": 9.9,
+        "visual_score": 8.1,
+        "final_score": 18.0,
+        "recipe_no": 3,
+        "candidate": "B"
+      }
+    ]
+  },
+  {
+    "recipe_no": 4,
+    "recipe": "Chicken schnitzel & potatoes",
+    "search": "chicken schnitzel potatoes",
+    "candidates": [
+      {
+        "provider": "commons",
+        "title": "Chicken schnitzel and mashed potatoes.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Chicken_schnitzel_and_mashed_potatoes.jpg/960px-Chicken_schnitzel_and_mashed_potatoes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Chicken_schnitzel_and_mashed_potatoes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:Chicken_schnitzel_and_mashed_potatoes.jpg",
+        "creator": "Pastorius",
+        "license": "CC BY-SA 3.0",
+        "width": 1700,
+        "height": 1700,
+        "match_score": 14.2,
+        "visual_score": 7.6,
+        "final_score": 21.8,
+        "recipe_no": 4,
+        "candidate": "A"
+      },
+      {
+        "provider": "commons",
+        "title": "Schnitzel with baked potatoes and salad.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Schnitzel_with_baked_potatoes_and_salad.jpg/960px-Schnitzel_with_baked_potatoes_and_salad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Schnitzel_with_baked_potatoes_and_salad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:Schnitzel_with_baked_potatoes_and_salad.jpg",
+        "creator": "Maor X",
+        "license": "CC BY-SA 3.0",
+        "width": 2464,
+        "height": 1469,
+        "match_score": 10.7,
+        "visual_score": 8.5,
+        "final_score": 19.2,
+        "recipe_no": 4,
+        "candidate": "B"
+      }
+    ]
+  },
+  {
+    "recipe_no": 5,
+    "recipe": "Boerewors & mash",
+    "search": "boerewors sausage mashed potatoes",
+    "candidates": []
+  },
+  {
+    "recipe_no": 6,
+    "recipe": "Frikkadels & potatoes",
+    "search": "South African frikkadels meatballs",
+    "candidates": []
+  },
+  {
+    "recipe_no": 7,
+    "recipe": "Chicken wraps",
+    "search": "chicken wrap",
+    "candidates": [
+      {
+        "provider": "commons",
+        "title": "Bacon-wrapped Chicken Breast (10508565854).jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Bacon-wrapped_Chicken_Breast_%2810508565854%29.jpg/960px-Bacon-wrapped_Chicken_Breast_%2810508565854%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Bacon-wrapped_Chicken_Breast_%2810508565854%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:Bacon-wrapped_Chicken_Breast_(10508565854).jpg",
+        "creator": "Michele Frazier from USA",
+        "license": "CC BY 2.0",
+        "width": 2592,
+        "height": 1936,
+        "match_score": 10.7,
+        "visual_score": 8.6,
+        "final_score": 19.3,
+        "recipe_no": 7,
+        "candidate": "A"
+      },
+      {
+        "provider": "commons",
+        "title": "Butter Chicken Wrap (3842118558).jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Butter_Chicken_Wrap_%283842118558%29.jpg/960px-Butter_Chicken_Wrap_%283842118558%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Butter_Chicken_Wrap_%283842118558%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:Butter_Chicken_Wrap_(3842118558).jpg",
+        "creator": "Mack Male from Edmonton, AB, Canada",
+        "license": "CC BY-SA 2.0",
+        "width": 3264,
+        "height": 2448,
+        "match_score": 10.7,
+        "visual_score": 8.6,
+        "final_score": 19.3,
+        "recipe_no": 7,
+        "candidate": "B"
+      },
+      {
+        "provider": "commons",
+        "title": "Butter Chicken Wrap from Remedy.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Butter_Chicken_Wrap_from_Remedy.jpg/960px-Butter_Chicken_Wrap_from_Remedy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/6/68/Butter_Chicken_Wrap_from_Remedy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:Butter_Chicken_Wrap_from_Remedy.jpg",
+        "creator": "Mack Male from Edmonton, AB, Canada",
+        "license": "CC BY-SA 2.0",
+        "width": 4000,
+        "height": 3000,
+        "match_score": 10.7,
+        "visual_score": 8.5,
+        "final_score": 19.2,
+        "recipe_no": 7,
+        "candidate": "C"
+      }
+    ]
+  },
+  {
+    "recipe_no": 8,
+    "recipe": "Sausages & onion gravy",
+    "search": "sausage onions gravy",
+    "candidates": [
+      {
+        "provider": "commons",
+        "title": "CONISBEE BUTCHER LAMB & MINT SAUSAGES - The Greyhound 2025-05-14.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/CONISBEE_BUTCHER_LAMB_%26_MINT_SAUSAGES_-_The_Greyhound_2025-05-14.jpg/960px-CONISBEE_BUTCHER_LAMB_%26_MINT_SAUSAGES_-_The_Greyhound_2025-05-14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/4/40/CONISBEE_BUTCHER_LAMB_%26_MINT_SAUSAGES_-_The_Greyhound_2025-05-14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:CONISBEE_BUTCHER_LAMB_%26_MINT_SAUSAGES_-_The_Greyhound_2025-05-14.jpg",
+        "creator": "Andy Li",
+        "license": "CC0",
+        "width": 8160,
+        "height": 6144,
+        "match_score": 7.2,
+        "visual_score": 7.8,
+        "final_score": 15.0,
+        "recipe_no": 8,
+        "candidate": "A"
+      },
+      {
+        "provider": "commons",
+        "title": "Fifteen ways to use onions (IA CAT31070997).pdf",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Fifteen_ways_to_use_onions_%28IA_CAT31070997%29.pdf/page1-960px-Fifteen_ways_to_use_onions_%28IA_CAT31070997%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Fifteen_ways_to_use_onions_%28IA_CAT31070997%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:Fifteen_ways_to_use_onions_(IA_CAT31070997).pdf",
+        "creator": "\nUnited States. War Food Administration. Office of Distribution\nUnited States. Bureau of Human Nutri",
+        "license": "Public domain",
+        "width": 1154,
+        "height": 1552,
+        "match_score": 7.2,
+        "visual_score": -0.8,
+        "final_score": 6.4,
+        "recipe_no": 8,
+        "candidate": "B"
+      },
+      {
+        "provider": "commons",
+        "title": "Canned pork and gravy in family meals (IA cannedporkgravyi43unit).pdf",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Canned_pork_and_gravy_in_family_meals_%28IA_cannedporkgravyi43unit%29.pdf/page1-500px-Canned_pork_and_gravy_in_family_meals_%28IA_cannedporkgravyi43unit%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Canned_pork_and_gravy_in_family_meals_%28IA_cannedporkgravyi43unit%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:Canned_pork_and_gravy_in_family_meals_(IA_cannedporkgravyi43unit).pdf",
+        "creator": "\nUnited States. Agricultural Marketing Service",
+        "license": "Public domain",
+        "width": 791,
+        "height": 1027,
+        "match_score": 6.4,
+        "visual_score": -0.6,
+        "final_score": 5.8,
+        "recipe_no": 8,
+        "candidate": "C"
+      }
+    ]
+  },
+  {
+    "recipe_no": 9,
+    "recipe": "Fish & chips",
+    "search": "fish and chips",
+    "candidates": [
+      {
+        "provider": "commons",
+        "title": "Fish and Chips at Picazo Kitchen + Bar - 2019 - Sarah Stierch.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Fish_and_Chips_at_Picazo_Kitchen_%2B_Bar_-_2019_-_Sarah_Stierch.jpg/960px-Fish_and_Chips_at_Picazo_Kitchen_%2B_Bar_-_2019_-_Sarah_Stierch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Fish_and_Chips_at_Picazo_Kitchen_%2B_Bar_-_2019_-_Sarah_Stierch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:Fish_and_Chips_at_Picazo_Kitchen_%2B_Bar_-_2019_-_Sarah_Stierch.jpg",
+        "creator": "Missvain",
+        "license": "CC BY 4.0",
+        "width": 4032,
+        "height": 3024,
+        "match_score": 10.7,
+        "visual_score": 8.7,
+        "final_score": 19.4,
+        "recipe_no": 9,
+        "candidate": "A"
+      },
+      {
+        "provider": "commons",
+        "title": "Fish and Chips at Noyo River Grill - Sarah Stierch.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Fish_and_Chips_at_Noyo_River_Grill_-_Sarah_Stierch.jpg/960px-Fish_and_Chips_at_Noyo_River_Grill_-_Sarah_Stierch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/2/28/Fish_and_Chips_at_Noyo_River_Grill_-_Sarah_Stierch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:Fish_and_Chips_at_Noyo_River_Grill_-_Sarah_Stierch.jpg",
+        "creator": "Missvain",
+        "license": "CC BY 4.0",
+        "width": 3878,
+        "height": 3024,
+        "match_score": 10.7,
+        "visual_score": 8.6,
+        "final_score": 19.3,
+        "recipe_no": 9,
+        "candidate": "B"
+      },
+      {
+        "provider": "commons",
+        "title": "Fish and chips - Twickenham, UK.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Fish_and_chips_-_Twickenham%2C_UK.jpg/960px-Fish_and_chips_-_Twickenham%2C_UK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/8/88/Fish_and_chips_-_Twickenham%2C_UK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:Fish_and_chips_-_Twickenham,_UK.jpg",
+        "creator": "Daderot",
+        "license": "CC0",
+        "width": 2268,
+        "height": 3068,
+        "match_score": 10.7,
+        "visual_score": 8.6,
+        "final_score": 19.3,
+        "recipe_no": 9,
+        "candidate": "C"
+      }
+    ]
+  },
+  {
+    "recipe_no": 10,
+    "recipe": "Eggs, potatoes & spinach",
+    "search": "spinach potato egg skillet",
+    "candidates": [
+      {
+        "provider": "commons",
+        "title": "BREAKFAST SKILLET - T @ The Dials 2025-07-18.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/BREAKFAST_SKILLET_-_T_%40_The_Dials_2025-07-18.jpg/960px-BREAKFAST_SKILLET_-_T_%40_The_Dials_2025-07-18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/9/97/BREAKFAST_SKILLET_-_T_%40_The_Dials_2025-07-18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:BREAKFAST_SKILLET_-_T_@_The_Dials_2025-07-18.jpg",
+        "creator": "Andy Li",
+        "license": "CC0",
+        "width": 8160,
+        "height": 6144,
+        "match_score": 7.2,
+        "visual_score": 8.6,
+        "final_score": 15.8,
+        "recipe_no": 10,
+        "candidate": "A"
+      },
+      {
+        "provider": "commons",
+        "title": "Egg dishes at low cost (IA CAT10675722).pdf",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Egg_dishes_at_low_cost_%28IA_CAT10675722%29.pdf/page1-500px-Egg_dishes_at_low_cost_%28IA_CAT10675722%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Egg_dishes_at_low_cost_%28IA_CAT10675722%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:Egg_dishes_at_low_cost_(IA_CAT10675722).pdf",
+        "creator": "\nUnited States. Bureau of Human Nutrition and Home Economics",
+        "license": "Public domain",
+        "width": 581,
+        "height": 1272,
+        "match_score": 5.4,
+        "visual_score": 8.0,
+        "final_score": 13.4,
+        "recipe_no": 10,
+        "candidate": "B"
+      },
+      {
+        "provider": "commons",
+        "title": "Use plentiful potatoes for thrift, good health, good eating (IA CAT31069225).pdf",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Use_plentiful_potatoes_for_thrift%2C_good_health%2C_good_eating_%28IA_CAT31069225%29.pdf/page1-500px-Use_plentiful_potatoes_for_thrift%2C_good_health%2C_good_eating_%28IA_CAT31069225%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Use_plentiful_potatoes_for_thrift%2C_good_health%2C_good_eating_%28IA_CAT31069225%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:Use_plentiful_potatoes_for_thrift,_good_health,_good_eating_(IA_CAT31069225).pdf",
+        "creator": "\nUnited States. Office for Food and Feed Conservation",
+        "license": "Public domain",
+        "width": 825,
+        "height": 1822,
+        "match_score": 6.4,
+        "visual_score": 6.9,
+        "final_score": 13.3,
+        "recipe_no": 10,
+        "candidate": "C"
+      }
+    ]
+  },
+  {
+    "recipe_no": 11,
+    "recipe": "Homemade chicken pizza",
+    "search": "chicken pizza",
+    "candidates": []
+  },
+  {
+    "recipe_no": 12,
+    "recipe": "Tuna mayo jacket potatoes",
+    "search": "tuna baked potato",
+    "candidates": []
+  },
+  {
+    "recipe_no": 13,
+    "recipe": "Omelette & toast",
+    "search": "omelette toast",
+    "candidates": []
+  },
+  {
+    "recipe_no": 14,
+    "recipe": "Chicken drumsticks & wedges",
+    "search": "chicken drumsticks roasted potato wedges",
+    "candidates": []
+  },
+  {
+    "recipe_no": 15,
+    "recipe": "Spaghetti bolognese",
+    "search": "spaghetti bolognese",
+    "candidates": []
+  },
+  {
+    "recipe_no": 16,
+    "recipe": "Creamy chicken mushroom pasta",
+    "search": "chicken mushroom pasta",
+    "candidates": []
+  },
+  {
+    "recipe_no": 17,
+    "recipe": "Cottage pie",
+    "search": "cottage pie",
+    "candidates": []
+  },
+  {
+    "recipe_no": 18,
+    "recipe": "Mild chicken curry & rice",
+    "search": "chicken curry rice",
+    "candidates": []
+  },
+  {
+    "recipe_no": 19,
+    "recipe": "Tuna pasta bake",
+    "search": "tuna pasta bake",
+    "candidates": []
+  },
+  {
+    "recipe_no": 20,
+    "recipe": "Chicken pesto-style pasta",
+    "search": "chicken pesto pasta",
+    "candidates": []
+  },
+  {
+    "recipe_no": 21,
+    "recipe": "Beef tacos",
+    "search": "ground beef tacos",
+    "candidates": []
+  },
+  {
+    "recipe_no": 22,
+    "recipe": "Chicken & vegetable traybake",
+    "search": "roasted chicken vegetables traybake",
+    "candidates": []
+  },
+  {
+    "recipe_no": 23,
+    "recipe": "Beef mince & potato skillet",
+    "search": "minced beef potatoes skillet",
+    "candidates": []
+  },
+  {
+    "recipe_no": 24,
+    "recipe": "Cheesy vegetable pasta bake",
+    "search": "vegetable cheesy pasta bake",
+    "candidates": []
+  },
+  {
+    "recipe_no": 25,
+    "recipe": "Beef bobotie",
+    "search": "South African bobotie",
+    "candidates": []
+  },
+  {
+    "recipe_no": 26,
+    "recipe": "Chicken stew & pap",
+    "search": "chicken stew maize pap",
+    "candidates": []
+  },
+  {
+    "recipe_no": 27,
+    "recipe": "Boerewors, pap & chakalaka",
+    "search": "boerewors pap chakalaka",
+    "candidates": []
+  },
+  {
+    "recipe_no": 28,
+    "recipe": "Cape Malay chicken curry",
+    "search": "Cape Malay chicken curry",
+    "candidates": []
+  },
+  {
+    "recipe_no": 29,
+    "recipe": "Frikkadels in tomato sauce",
+    "search": "meatballs tomato sauce",
+    "candidates": []
+  },
+  {
+    "recipe_no": 30,
+    "recipe": "Tomato bredie",
+    "search": "tomato bredie beef",
+    "candidates": []
+  },
+  {
+    "recipe_no": 31,
+    "recipe": "Samp & beans",
+    "search": "samp beans South Africa",
+    "candidates": []
+  },
+  {
+    "recipe_no": 32,
+    "recipe": "Easy bean bunny chow",
+    "search": "bean bunny chow",
+    "candidates": []
+  },
+  {
+    "recipe_no": 33,
+    "recipe": "Roasted butternut soup",
+    "search": "butternut squash soup",
+    "candidates": []
+  },
+  {
+    "recipe_no": 34,
+    "recipe": "Tomato & red lentil soup",
+    "search": "tomato lentil soup",
+    "candidates": []
+  },
+  {
+    "recipe_no": 35,
+    "recipe": "Hearty beef vegetable soup",
+    "search": "beef vegetable soup",
+    "candidates": []
+  },
+  {
+    "recipe_no": 36,
+    "recipe": "Chicken noodle soup",
+    "search": "chicken noodle soup",
+    "candidates": []
+  },
+  {
+    "recipe_no": 37,
+    "recipe": "Creamy chicken & mushroom soup",
+    "search": "chicken mushroom soup",
+    "candidates": []
+  },
+  {
+    "recipe_no": 38,
+    "recipe": "Vegetable barley soup",
+    "search": "vegetable barley soup",
+    "candidates": []
+  },
+  {
+    "recipe_no": 39,
+    "recipe": "Split pea & vegetable soup",
+    "search": "split pea soup",
+    "candidates": []
+  },
+  {
+    "recipe_no": 40,
+    "recipe": "Minestrone with beans",
+    "search": "minestrone bean soup",
+    "candidates": []
+  },
+  {
+    "recipe_no": 41,
+    "recipe": "Chickpea & butternut curry",
+    "search": "chickpea butternut curry",
+    "candidates": []
+  },
+  {
+    "recipe_no": 42,
+    "recipe": "Spinach feta frittata",
+    "search": "spinach feta frittata",
+    "candidates": []
+  },
+  {
+    "recipe_no": 43,
+    "recipe": "Lentil cottage pie",
+    "search": "lentil shepherds pie",
+    "candidates": []
+  },
+  {
+    "recipe_no": 44,
+    "recipe": "Bean chilli with rice",
+    "search": "bean chilli rice",
+    "candidates": []
+  },
+  {
+    "recipe_no": 45,
+    "recipe": "Roasted vegetable couscous",
+    "search": "roasted vegetables couscous",
+    "candidates": []
+  },
+  {
+    "recipe_no": 46,
+    "recipe": "Shakshuka & toast",
+    "search": "shakshuka",
+    "candidates": []
+  },
+  {
+    "recipe_no": 47,
+    "recipe": "Moroccan beef lentil stew",
+    "search": "Moroccan beef lentil stew",
+    "candidates": []
+  },
+  {
+    "recipe_no": 48,
+    "recipe": "Beef koftas with couscous",
+    "search": "beef kofta couscous",
+    "candidates": []
+  },
+  {
+    "recipe_no": 49,
+    "recipe": "Lemon-herb hake & greens",
+    "search": "hake fish grilled lemon",
+    "candidates": []
+  },
+  {
+    "recipe_no": 50,
+    "recipe": "Mild Thai-style vegetable curry",
+    "search": "vegetable coconut curry",
+    "candidates": []
+  },
+  {
+    "recipe_no": 51,
+    "recipe": "Butter chicken",
+    "search": "butter chicken Indian",
+    "candidates": []
+  },
+  {
+    "recipe_no": 52,
+    "recipe": "Chicken biryani",
+    "search": "chicken biryani",
+    "candidates": []
+  },
+  {
+    "recipe_no": 53,
+    "recipe": "Chana masala",
+    "search": "chana masala",
+    "candidates": []
+  },
+  {
+    "recipe_no": 54,
+    "recipe": "Red lentil dal",
+    "search": "red lentil dal",
+    "candidates": []
+  },
+  {
+    "recipe_no": 55,
+    "recipe": "Lamb rogan josh-style curry",
+    "search": "lamb rogan josh",
+    "candidates": []
+  },
+  {
+    "recipe_no": 56,
+    "recipe": "Paneer and spinach curry",
+    "search": "palak paneer spinach",
+    "candidates": []
+  },
+  {
+    "recipe_no": 57,
+    "recipe": "Japanese-style chicken curry",
+    "search": "Japanese chicken curry",
+    "candidates": []
+  },
+  {
+    "recipe_no": 58,
+    "recipe": "Vegetable fried rice",
+    "search": "vegetable fried rice",
+    "candidates": []
+  },
+  {
+    "recipe_no": 59,
+    "recipe": "Ginger chicken noodle bowls",
+    "search": "chicken noodle stir fry",
+    "candidates": []
+  },
+  {
+    "recipe_no": 60,
+    "recipe": "Korean-inspired beef rice bowls",
+    "search": "Korean beef rice bowl",
+    "candidates": []
+  },
+  {
+    "recipe_no": 61,
+    "recipe": "Thai-style chicken coconut soup",
+    "search": "Thai coconut chicken soup",
+    "candidates": []
+  },
+  {
+    "recipe_no": 62,
+    "recipe": "Thai green-style chicken curry",
+    "search": "Thai green chicken curry",
+    "candidates": []
+  },
+  {
+    "recipe_no": 63,
+    "recipe": "Vietnamese-inspired beef noodle salad",
+    "search": "Vietnamese beef noodle salad",
+    "candidates": []
+  },
+  {
+    "recipe_no": 64,
+    "recipe": "Mushroom risotto",
+    "search": "mushroom risotto",
+    "candidates": []
+  },
+  {
+    "recipe_no": 65,
+    "recipe": "Spinach ricotta cannelloni",
+    "search": "spinach ricotta cannelloni",
+    "candidates": []
+  },
+  {
+    "recipe_no": 66,
+    "recipe": "Classic lasagne",
+    "search": "beef lasagna",
+    "candidates": []
+  },
+  {
+    "recipe_no": 67,
+    "recipe": "Gnocchi with roasted tomato sauce",
+    "search": "gnocchi tomato sauce",
+    "candidates": []
+  },
+  {
+    "recipe_no": 68,
+    "recipe": "Spanish chicken and chickpea stew",
+    "search": "Spanish chicken chickpea stew",
+    "candidates": []
+  },
+  {
+    "recipe_no": 69,
+    "recipe": "Greek lemon chicken and potatoes",
+    "search": "Greek lemon roasted chicken potato",
+    "candidates": []
+  },
+  {
+    "recipe_no": 70,
+    "recipe": "Beef moussaka",
+    "search": "beef moussaka",
+    "candidates": []
+  },
+  {
+    "recipe_no": 71,
+    "recipe": "Moroccan chickpea tagine",
+    "search": "Moroccan chickpea tagine",
+    "candidates": []
+  },
+  {
+    "recipe_no": 72,
+    "recipe": "Shawarma-inspired chicken wraps",
+    "search": "chicken shawarma wrap",
+    "candidates": []
+  },
+  {
+    "recipe_no": 73,
+    "recipe": "Mexican chicken enchiladas",
+    "search": "chicken enchiladas",
+    "candidates": []
+  },
+  {
+    "recipe_no": 74,
+    "recipe": "Black bean chilli and baked sweet potatoes",
+    "search": "black bean chili sweet potato",
+    "candidates": []
+  },
+  {
+    "recipe_no": 75,
+    "recipe": "French onion soup",
+    "search": "French onion soup",
+    "candidates": []
+  },
+  {
+    "recipe_no": 76,
+    "recipe": "Broccoli and cheddar soup",
+    "search": "broccoli cheddar soup",
+    "candidates": []
+  },
+  {
+    "recipe_no": 77,
+    "recipe": "Chicken and sweetcorn chowder",
+    "search": "chicken corn chowder",
+    "candidates": []
+  },
+  {
+    "recipe_no": 78,
+    "recipe": "Roast vegetable and red lentil soup",
+    "search": "roasted vegetables lentil soup",
+    "candidates": []
+  },
+  {
+    "recipe_no": 79,
+    "recipe": "Slow-cooked beef potjie-style stew",
+    "search": "beef potjie stew",
+    "candidates": []
+  },
+  {
+    "recipe_no": 80,
+    "recipe": "Cape Malay-style lentil bobotie",
+    "search": "lentil bobotie",
+    "candidates": []
+  },
+  {
+    "recipe_no": 81,
+    "recipe": "Pap with tomato and bean relish",
+    "search": "pap tomato relish beans",
+    "candidates": []
+  },
+  {
+    "recipe_no": 82,
+    "recipe": "Warm chicken and roast vegetable salad",
+    "search": "chicken roasted vegetables salad",
+    "candidates": []
+  }
+]
