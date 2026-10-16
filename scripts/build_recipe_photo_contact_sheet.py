@@ -33,48 +33,98 @@ def fetchimg(url, timeout=9):
         return im.convert("RGB")
     except Exception: return None
 
-def source_photo(name,query,idx):
-    # Real photos only, from explicitly identified web sources.
+
+# No generic 'nearest dish' substitutions: verify prominent dish terms in source metadata.
+def keywords(query):
+    ignored={"and","with","style","inspired","mild","classic","homemade","easy","hearty","fresh","roasted","warm","the","rice","potato","potatoes","vegetable","vegetables","chicken","beef","sauce","soup","pasta"}
+    return [w for w in re.findall(r"[a-z]+",query.lower()) if len(w)>=3 and w not in ignored]
+
+def strict_score(title,query,photo=None):
+    title=re.sub("<[^>]+>"," ",title.lower())
+    qwords=keywords(query)
+    matches=sum(1 for w in qwords if w in title)
+    meal_words=["biryani","tacos","shakshuka","lasagna","lasagne","schnitzel","couscous","enchilada","omelette","bobotie","moussaka","risotto","cannelloni","chowder","gnocchi","kofta","curry","burger","stew","pizza","dal","pasta","wrap","fries","meatball","lentil","chili","chilli","frittata","soup","noodle"]
+    if any(w in query.lower() for w in meal_words):
+        core=[w for w in meal_words if w in query.lower()]
+        if not any(w in title for w in core):return -999
+    if matches < (1 if len(qwords)<3 else 2):return -999
+    bad=["illustration","ai generated","generative","vector","painting","artwork","clipart","packaging","food package","menu board","recipe book","stock image"]
+    if any(w in title for w in bad):return -999
+    size_bonus=0
+    if photo:
+        width=photo.get("width") or 0; height=photo.get("height") or 0
+        if width and height:
+            if min(width,height)<350:return -999
+            size_bonus=min(3,(width*height)/500000)
+    return matches*5 + size_bonus
+
+def commons_candidates(query):
+    api="https://commons.wikimedia.org/w/api.php"
     try:
-        r=requests.get("https://api.openverse.org/v1/images/",params={"q":query,"page_size":10,"license":"cc0,pdm,by,by-sa"},timeout=9)
-        if r.ok:
-            data=r.json().get("results",[])
-            words=set(re.findall(r"[a-z]+",query.lower()))-set(["and","with","style","soup","rice","chicken","beef","vegetable","roasted"])
-            scored=[]
-            for p in data:
-                license=(p.get("license") or "").lower()
-                if license not in ("cc0","pdm","by","by-sa"):continue
-                title=(p.get("title") or "").lower()
-                tags=" ".join(x.get("name","") for x in p.get("tags",[]) if isinstance(x,dict)).lower()
-                pool=title+" "+tags
-                matches=sum(1 for w in words if w in pool)
-                if matches==0:continue
-                if any(x in pool for x in ("illustration","painting","vector","generated","drawing","menu","cartoon")):continue
-                scored.append((matches,p))
-            scored.sort(reverse=True,key=lambda x:x[0])
-            for score,p in scored[:3]:
-                img=fetchimg(p.get("thumbnail") or p.get("url") or "")
-                if img:
-                    return img,{"recipe":name,"source":"Openverse / "+str(p.get("source","")),"photo_page":p.get("foreign_landing_url") or "","photographer":p.get("creator") or "Uncredited","license":p.get("license"),"match":"candidate_for_visual_review","matches":score}
-    except Exception:pass
-    # Fallback to explicitly public-domain photographs.
-    if FALLBACKS:
-        label=query.lower().replace("style","")
-        hint=set(re.findall(r"[a-z]+",label))
-        choices=[]
-        for f in FALLBACKS:
-            b=f[:-5].replace("-"," ")
-            s=difflib.SequenceMatcher(None,label,b).ratio()+sum(0.24 for w in hint if len(w)>3 and w in b)
-            if any(w in b for w in ("tea","cake","cookies","muffin","biscuits","waffles","dessert","pie crust","coffee","milkshake")):
-                s-=0.7
-            choices.append((s,f))
-        choices.sort(reverse=True)
-        # The fallback is only a general food-photography reference, never claimed as exact.
-        for score,f in choices[:7]:
-            im=fetchimg(BASE+quote(f))
-            if im:
-                return im,{"recipe":name,"source":"Public Domain Recipes","photo_page":"https://github.com/ronaldl29/public-domain-recipes/blob/main/static/pix/"+quote(f),"photographer":"Public Domain Recipes contributor","license":"CC0/public domain (repository statement)","match":"illustrative reference — may not depict the named dish","reference_photo":f}
-    return None,{"recipe":name,"source":"none","match":"not sourced"}
+        params={"action":"query","format":"json","generator":"search",
+          "gsrsearch":query+" filetype:bitmap","gsrnamespace":6,"gsrlimit":15,
+          "prop":"imageinfo","iiprop":"url|size|extmetadata","iiurlwidth":640}
+        res=requests.get(api,params=params,timeout=16,headers={"User-Agent":"PIPPhotoReview/1.0 (recipe contact sheet)"})
+        if not res.ok:return []
+        pages=res.json().get("query",{}).get("pages",{})
+        results=[]
+        for p in pages.values():
+            info=(p.get("imageinfo") or [{}])[0]
+            m=info.get("extmetadata") or {}
+            license_name=(m.get("LicenseShortName") or {}).get("value","")
+            lc=license_name.lower().replace(" ","")
+            if not any(x in lc for x in ("cc-by","cc0","publicdomain")):continue
+            photo={"url":info.get("thumburl") or info.get("url"),"source":"Wikimedia Commons",
+             "photo_page":info.get("descriptionurl") or "","photographer":re.sub("<[^>]+>"," ",(m.get("Artist") or {}).get("value",""))[:180],
+             "license":license_name,"width":info.get("width"),"height":info.get("height")}
+            photo["title"]=p.get("title","").replace("File:","").replace("_"," ")
+            results.append(photo)
+        return results
+    except Exception:return []
+
+def openverse_candidates(query):
+    try:
+        resp=requests.get("https://api.openverse.org/v1/images/",params={"q":query,"page_size":20,"license":"cc0,pdm,by,by-sa"},timeout=16)
+        if not resp.ok:return []
+        out=[]
+        for p in resp.json().get("results",[]):
+            if (p.get("license") or "").lower() not in ("cc0","pdm","by","by-sa"):continue
+            title=p.get("title") or ""
+            tags=" ".join(x.get("name","") for x in (p.get("tags") or []) if isinstance(x,dict))
+            out.append({"url":p.get("thumbnail") or p.get("url"),"source":"Openverse / "+str(p.get("source","")),
+            "photo_page":p.get("foreign_landing_url") or "","photographer":p.get("creator") or "",
+            "license":p.get("license"),"width":p.get("width"),"height":p.get("height"),"title":title,
+            "tags":tags})
+        return out
+    except Exception:return []
+
+def source_photo(name,query,idx):
+    # Exact named dish, then short dish query, NEVER an unrelated fallback photograph.
+    terms=[query,name]
+    scored=[]
+    for q in terms:
+        for p in commons_candidates(q)+openverse_candidates(q):
+            title=p.get("title","")+" "+p.get("tags","")
+            score=strict_score(title,query,p)
+            if score<0:continue
+            # Prefer naturally shot, high-resolution photographs; no claims of guaranteed aesthetic quality.
+            if "flickr" in p.get("source","").lower():score+=0.4
+            scored.append((score,p))
+        if scored:break
+    scored.sort(key=lambda item:-item[0])
+    seen=set()
+    for score,p in scored[:14]:
+        url=p.get("url") or ""
+        page=p.get("photo_page") or url
+        if not url or page in seen:continue
+        seen.add(page)
+        im=fetchimg(url,timeout=12)
+        if im:
+            return im,{"recipe":name,"source":p.get("source"),"photo_page":page,
+             "photographer":p.get("photographer"),"license":p.get("license"),
+             "match":"dish-keyword-matched candidate; aesthetic and ingredients still require visual approval",
+             "score":round(score,2),"source_title":p.get("title","")}
+    return None,{"recipe":name,"source":"none","match":"no suitably named licensed dish photograph found — not substituted"}
 
 def font(size,bold=False):
     candidates=["/usr/share/fonts/truetype/dejavu/DejaVuSans-"+("Bold" if bold else "")+".ttf","/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"]
@@ -105,7 +155,7 @@ def worker(arg):
     i,(name,query)=arg
     im,meta=source_photo(name,query,i)
     return i,im,meta
-with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+with concurrent.futures.ThreadPoolExecutor(max_workers=10) as pool:
     futs={pool.submit(worker,(i,(name,q))):i for i,(name,q) in enumerate(zip(NAMES,SEARCH))}
     for fut in concurrent.futures.as_completed(futs):
         i=futs[fut]
@@ -117,7 +167,7 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
             pic=ImageOps.fit(im,(cw-13,177),method=Image.Resampling.LANCZOS,centering=(0.5,0.48))
             board.paste(pic,(x+1,y+1))
         else:
-            draw.text((x+16,y+64),"PHOTO NOT FOUND",font=font(16,True),fill=(214,194,170))
+            draw.text((x+16,y+64),"NEEDS CURATION",font=font(16,True),fill=(214,194,170))
         draw.text((x+13,y+184),"RECIPE "+str(i+1).zfill(2),font=font(12,True),fill=(163,181,159))
         for j,line in enumerate(wrap(draw,NAMES[i],font(15,True),cw-36)[:2]):
             draw.text((x+13,y+205+j*20),line,font=font(15,True),fill=(247,246,242))
@@ -126,10 +176,10 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
         if len(manifest)%10==0:print("Images processed:",len(manifest),flush=True)
 manifest.sort(key=lambda x:x["recipe_no"])
 count=sum(x["sourced"] for x in manifest)
-board.save(OUT/"PIP_82_Real_Food_Photo_Contact_Sheet.png",optimize=True)
+board.save(OUT/"PIP_82_Curated_Dish_Matched_Photo_Sheet.png",optimize=True)
 preview=board.copy()
 preview.thumbnail((1500,3200),resample=Image.Resampling.LANCZOS)
-preview.save(OUT/"PIP_82_Real_Food_Photo_Contact_Sheet_Preview.jpg",quality=38,optimize=True,subsampling=2)
+preview.save(OUT/"PIP_82_Curated_Dish_Matched_Photo_Sheet_Preview.jpg",quality=63,optimize=True,subsampling=2)
 print("Saved optimized JPG preview", (OUT/"PIP_82_Real_Food_Photo_Contact_Sheet_Preview.jpg").stat().st_size,flush=True)
-(OUT/"PIP_82_Photo_Sources.json").write_text(json.dumps({"sourced":count,"total":len(NAMES),"images":manifest},indent=2))
+(OUT/"PIP_82_Curated_Photo_Sources.json").write_text(json.dumps({"sourced":count,"total":len(NAMES),"images":manifest},indent=2))
 print(f"Saved PNG: {count}/82 genuine photographs",flush=True)
