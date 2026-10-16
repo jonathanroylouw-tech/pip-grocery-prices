@@ -74,3 +74,13 @@ for label,u in {'jina_pexels':'https://r.jina.ai/https://www.pexels.com/search/b
   images=[x for x in hits if 'pexels' in x][:9]
   print('READER',label,r.status_code,len(r.content),'pexels_urls',images,flush=True)
  except Exception as e:print('READER_ERR',label,str(e)[:130],flush=True)
+
+for dish in ('beef%20tacos','chicken%20wrap','cottage%20pie'):
+ try:
+  u='https://r.jina.ai/https://www.pexels.com/search/'+dish+'/'
+  r=requests.get(u,timeout=17)
+  t=r.text
+  pics=re.findall(r'https?://(?:www\\.)?pexels\\.com/photo/[^)\\s\"<>]+',t)
+  files=re.findall(r'https?://images\\.pexels\\.com/photos/[0-9]+/[^)\\s\"<>]+',t)
+  print('JINA_PHOTOS',dish,r.status_code,'links',len(pics),'imgs',len(files),'examples',pics[:5],files[:2],flush=True)
+ except Exception as e:print('JINA_ERR',dish,str(e)[:80],flush=True)
